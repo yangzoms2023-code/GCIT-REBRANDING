@@ -1,0 +1,349 @@
+[
+  {
+    "id": 1,
+    "category": "AI",
+    "short": "Self-driving car",
+    "summary": "This project explores the concept of a self-driving car system using modern deep learning techniques.",
+    "learnTitle": "Self-Driving Car Using Advanced Deep Learning",
+    "learnDesc": "This project explores the concept of a self-driving car system using modern deep learning techniques. The main focus is on understanding how artificial intelligence can be applied to help a vehicle perceive its surroundings and make driving-related decisions in a controlled and experimental setting",
+    "image": "self.png",
+    "image2": "https://images.unsplash.com/photo-1493238792000-8113da705763",
+    "image3": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
+    "about": [
+      "The project studies how data from different sensors such as cameras and simulated inputs can be processed to recognize road elements like lanes, vehicles, pedestrians, and traffic signs.",
+      "Based on this understanding, the system is designed to support basic decision-making such as lane following and obstacle awareness.",
+      "Rather than building a fully autonomous vehicle for public roads, the project emphasizes learning, simulation, and experimentation."
+    ],
+    "howItWorks": [
+      { "title": "AI Processing", "desc": "Analyzes real time data from the vehicle's environment", "icon": "🧠" },
+      { "title": "Vehicle Control", "desc": "Makes driving decisions based on the processed data", "icon": "🚗" },
+      { "title": "Sensor Integration", "desc": "Uses data from sensors like cameras, radar, and LIDAR.", "icon": "📡" }
+    ],
+    "features": ["Simulation based", "Real time analysis", "Obstacle detection", "Safe testing of vehicle before real world use", "Focus on safety, reliability, and real-time processing"],
+    "developers": [
+      { "name": "Dorji Tsheten", "id": "12210007" },
+      { "name": "Kumar Rai", "id": "12210058" },
+      { "name": "Tashi Wangdi", "id": "12210095" },
+      { "name": "Chador", "id": "12210038" },
+      { "name": "Kenc Tshering", "id": "12210095" }
+    ],
+    "guide": "Ms. Jigme Wangmo",
+    "semester": "Spring Semester 2024",
+    "year": "4th year"
+  },
+  {
+    "id": 2,
+    "category": "AI",
+    "short": "MoM Tracker",
+    "summary": "AI system to organize and summarize meeting content.",
+    "learnTitle": "Minute-of-Meeting (MoM) Tracker Using Deep Learning",
+    "learnDesc": "The Minute-of-Meeting (MoM) Tracker is an Al-based system designed to assist in automatically organizing and summarizing meeting content. The project focuses on transforming meeting audio or text into structured and easy-to-read meeting minutes.",
+    "image": "mom.png",
+    "image2": "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+    "image3": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+    "about": [
+      "The system works by converting spoken content into text and then analyzing the conversation to identify key discussion points, decisions, and action items.",
+      "It aims to reduce the manual effort required to write meeting minutes while improving consistency and clarity.",
+      "Instead of replacing human judgment, the project is designed as a support tool that helps users quickly review meeting outcomes. The generated MoM can include summaries of discussions, identified tasks, and important follow-up points, presented in a clean and professional format."
+    ],
+    "howItWorks": [
+      { "title": "Speech-to-Text Conversion", "desc": "Transforms meeting audio into text format", "icon": "🎤" },
+      { "title": "Analysis", "desc": "Extracts important discussions, decisions, and tasks", "icon": "🔍" },
+      { "title": "Report", "desc": "Generates clean and organized meeting minutes", "icon": "📄" }
+    ],
+    "features": ["Auto summary", "Action extraction", "Structured output", "Highlights action items and responsibilities", "Improves clarity and consistency", "Reduces manual effort in writing meeting minutes"],
+    "developers": [
+      { "name": "Dorji Tsheten", "id": "12210007" },
+      { "name": "Kumar Rai", "id": "12210058" },
+      { "name": "Tashi Wangdi", "id": "12210095" },
+      { "name": "Chador", "id": "12210038" },
+      { "name": "Kenc Tshering", "id": "12210095" }
+    ],
+    "guide": "Ms. Jigme Wangmo",
+    "semester": "Spring Semester 2024",
+    "year": "4th year"
+  },
+  {
+    "id": 3,
+    "category": "AI",
+    "short": "FireWatch",
+    "summary": "AI system for early wildfire detection.",
+    "learnTitle": "FireWatch: AI-Powered Wildfire Early Detection System",
+    "learnDesc": "FireWatch is a concept-based project that explores the use of artificial intelligence for early wildfire detection. The system is designed to analyze visual data to identify potential fire or smoke patterns and notify users through a mobile application.",
+    "image": "firewatch.png",
+    "image2": "https://images.unsplash.com/photo-1508610048659-a06b669e3321",
+    "image3": "https://images.unsplash.com/photo-1549880338-65ddcdfd017b",
+    "about": [
+      "The project focuses on integrating computer vision with a mobile alert system to support faster awareness and response.",
+      "When a potential threat is detected, the system is designed to trigger notifications that can be viewed on a mobile device, helping users stay informed in near real time.",
+      "FireWatch emphasizes learning and experimentation in Al, mobile development, and system integration."
+    ],
+    "howItWorks": [
+      { "title": "Image Processing", "desc": "Analyzes visual inputs to detect signs of fire or smoke", "icon": "📷" },
+      { "title": "AI Detection Model", "desc": "Uses deep learning to recognize wildfire patterns", "icon": "🔥" },
+      { "title": "Mobile Alert System", "desc": "Sends instant notifications to users for quick awareness", "icon": "🚨" }
+    ],
+    "features": ["Early detection", "Real time alerts", "Mobile support", "Early detection of wildfire indicators", "Real-time mobile notifications", "Integration of AI with cross-platform mobile applications", "Supports faster response and situational awareness"],
+    "developers": [
+      { "name": "Dorji Tsheten", "id": "12210007" },
+      { "name": "Kumar Rai", "id": "12210058" },
+      { "name": "Tashi Wangdi", "id": "12210095" },
+      { "name": "Chador", "id": "12210038" },
+      { "name": "Kenc Tshering", "id": "12210095" }
+    ],
+    "guide": "Ms. Jigme Wangmo",
+    "semester": "Spring Semester 2024",
+    "year": "4th year"
+  },
+  {
+    "id": 4,
+    "category": "Blockchain",
+    "short": "Land Registry",
+    "summary": "Improves transparency of land records.",
+    "learnTitle": "Land Registry System (Gelephu Mindfulness City)",
+    "learnDesc": "This project focuses on developing a digital land registry system designed to improve the management and transparency of land records. The system explores how modern web technologies can be used to organize land information in a structured and accessible way.",
+    "image": "land.png",
+    "image2": "https://images.unsplash.com/photo-1507842217343-583bb7270b66",
+    "image3": "https://images.unsplash.com/photo-1508780709619-79562169bc64",
+    "about": [
+      "The platform provides a user-friendly interface where authorized users can view and manage land-related records.",
+      "To support data integrity and trust, the project incorporates a permissioned blockchain approach, ensuring that updates to land records are traceable and protected from unauthorized changes"
+    ],
+    "howItWorks": [
+      { "title": "Browse Menu", "desc": "Users view available food items through a clean interface", "icon": "📜" },
+      { "title": "Place Order", "desc": "Select items and submit orders", "icon": "🔐" },
+      { "title": "Order Processing", "desc": "System handles orders through a server-centric backend", "icon": "🔄" }
+    ],
+    "features": ["Secure", "Transparent", "Immutable", "Profile and CV management", "Job posting and application system", "Centralized recruitment process", "Improved communication between users"],
+    "developers": [
+      { "name": "Dorji Tsheten", "id": "12210007" },
+      { "name": "Kumar Rai", "id": "12210058" },
+      { "name": "Tashi Wangdi", "id": "12210095" },
+      { "name": "Chador", "id": "12210038" },
+      { "name": "Kenc Tshering", "id": "12210095" }
+    ],
+    "guide": "Ms. Jigme Wangmo",
+    "semester": "Spring Semester 2024",
+    "year": "4th year"
+  },
+  {
+    "id": 5,
+    "category": "BIDD",
+    "short": "DrukVies",
+    "summary": "Streaming platform for local content.",
+    "learnTitle": "Druk Vies: Digital Movie Streaming Platform",
+    "learnDesc": "DrukVies is a concept-based digital movie streaming platform designed to explore how online media services can be adapted to a local context. The project focuses on creating a user-friendly platform where users can browse, discover, and stream video content through a clean and structured interface.",
+    "image": "drukvies.png",
+    "image2": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba",
+    "image3": "https://images.unsplash.com/photo-1517602302552-471fe67acf66",
+    "about": [
+      "The system is designed with an emphasis on simplicity, usability, and content organization.",
+      "It allows users to view available movies, access basic details, and manage their viewing experience in an intuitive way.",
+      "Rather than competing with large commercial platforms, DrukVies serves as an academic project to study the core functionality behind streaming services."
+    ],
+    "howItWorks": [
+      { "title": "Browse Content", "desc": "Users explore available movies through a structured interface", "icon": "🎬" },
+      { "title": "Stream Videos", "desc": "Watch content directly within the platform", "icon": "▶️" },
+      { "title": "Manage Viewing", "desc": "Access movie details and control viewing experience", "icon": "📺" }
+    ],
+    "features": ["Streaming", "UI", "Organization", "Clean and intuitive user interface", "Organized content browsing system", "Basic movie details and streaming functionality", "Focus on user experience and simplicity"],
+    "developers": [
+      { "name": "Dorji Tsheten", "id": "12210007" },
+      { "name": "Kumar Rai", "id": "12210058" },
+      { "name": "Chador", "id": "12210038" },
+      { "name": "Tashi Wangdi", "id": "12210095" },
+      { "name": "Kenc Tshering", "id": "12210095" }
+    ],
+    "guide": "Ms. Jigme Wangmo",
+    "semester": "Spring Semester 2024",
+    "year": "4th year"
+  },
+  {
+    "id": 6,
+    "category": "BIDD",
+    "short": "Blog Website",
+    "summary": "Platform to publish and manage blogs.",
+    "learnTitle": "Blog Website",
+    "learnDesc": "DrukVies is a concept-based digital movie streaming platform designed to explore how online media services can be adapted to a local context. The project focuses on creating a user friendly platform where users can browse, discover, and stream video content through a clean and structured interface.",
+    "image": "blog.png",
+    "image2": "https://images.unsplash.com/photo-1455390582262-044cdead277a",
+    "image3": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "about": [
+      "The system is designed with an emphasis on simplicity, usability, and content organization.",
+      "It allows users to view available movies, access basic details, and manage their viewing experience in an intuitive way.",
+      "Rather than competing with large commercial platforms. Druk Vies serves as an academic project to study the core functionality behind streaming services."
+    ],
+    "howItWorks": [
+      { "title": "Browse Categories", "desc": "Users explore posts based on topics or categories", "icon": "📚" },
+      { "title": "Read Articles", "desc": "Watchs content directly within the platform", "icon": "👁️" },
+      { "title": "Manage Content", "desc": "Create, edit, and display blog pots", "icon": "✍️" }
+    ],
+    "features": ["Simple UI", "CMS", "Navigation", "Organized content structure", "Clean and readabile interface", "Basic content management system", "Easy navigation across topics"],
+    "developers": [
+      { "name": "Dorji Tsheten", "id": "12210007" },
+      { "name": "Kumar Rai", "id": "12210058" },
+      { "name": "Chador", "id": "12210038" },
+      { "name": "Tashi Wangdi", "id": "12210095" },
+      { "name": "Kenc Tshering", "id": "12210095" }
+    ],
+    "guide": "Ms. Jigme Wangmo",
+    "semester": "Spring Semester 2024",
+    "year": "4th year"
+  },
+  {
+    "id": 7,
+    "category": "BIDD",
+    "short": "Laa Job",
+    "summary": "Job matching platform.",
+    "learnTitle": "LAA job matching platform",
+    "learnDesc": "This project focuses on developing a digital job-matching platform designed to connect employers with job seekers through a structured and easy-to-use system. The platform aims to simplify the hiring process by providing a central space where job opportunities and candidate profiles can be managed efficiently.",
+    "image": "laa.png",
+    "image2": "https://images.unsplash.com/photo-1521791136064-7986c2920216",
+    "image3": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0",
+    "about": [
+      "Job seekers can create profiles, upload their Cvs, and apply for available positions, while employers can post job listings and review applicant information.",
+      "The system is designed to support clear communication between both parties and reduce the reliance on informal or manual recruitment mathods"
+    ],
+    "howItWorks": [
+      { "title": "Create Profile", "desc": "Job seekers bulld profiles and upload CVs", "icon": "👤" },
+      { "title": "Post & Apply Jobs", "desc": "Employers post jobs, and users apply for positions", "icon": "📩" },
+      { "title": "Manage Applications", "desc": "Both parties review and manage applications", "icon": "📊" }
+    ],
+    "features": ["Matching", "CV", "Tracking", "Profile and CV management", "Job posting and application system", "Centralized recruitment process", "Improved communication between sners"],
+    "developers": [
+      { "name": "Dorji Tsheten", "id": "12210007" },
+      { "name": "Kumar Rai", "id": "12210058" },
+      { "name": "Tashi Wangdi", "id": "12210095" },
+      { "name": "Chador", "id": "12210038" },
+      { "name": "Kenc Tshering", "id": "12210095" }
+    ],
+    "guide": "Ms. Jigme Wangmo",
+    "semester": "Spring Semester",
+    "year": "4th year"
+  },
+  {
+    "id": 8,
+    "category": "Fullstack",
+    "short": "Vet System",
+    "summary": "Online veterinary booking.",
+    "learnTitle": "Veterinary Appointment System",
+    "learnDesc": "This project focuses on developing a web-based veterinary appointment system designed to improve access to animal healthcare services in Bhutan. The platform aims to connect pet owners, livestock farmers, and licensed veterinarians through a single, organized digital system.",
+    "image": "veterinary.png",
+    "image2": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee",
+    "image3": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+    "about": [
+      "Due to Bhutan's challenging geography, scattered settlements, and limited availability of veterinary professionals, many animal owners face difficulties in accessing timely veterinary care.",
+      "The existing process is mostly informal, often relying on personal networks, which can lead to delays and inconsistent service delivery.",
+      "This project explores how a digital solution can help reduce these challenges by simplifying communication and appointment scheduling."
+    ],
+    "howItWorks": [
+      { "title": "Find Vet", "desc": "Search veterinarians by location and availability", "icon": "🔍" },
+      { "title": "Book Appointment", "desc": "Schedule visits and manage pet details", "icon": "📅" },
+      { "title": "Manage System", "desc": "Vets update availability, admins ensure reliability", "icon": "⚙️" }
+    ],
+    "features": ["Booking", "Profiles", "Roles", "Easy appointment scheduling system", "Centralized pet and medical information", "Verified veterinarian profiles", "Role-based access (User, Vet, Admin)", "Improved communication between clients and veterinarians"],
+    "developers": [
+      { "name": "Dorji Tsheten", "id": "12210007" },
+      { "name": "Kumar Rai", "id": "12210058" },
+      { "name": "Tashi Wangdi", "id": "12210095" },
+      { "name": "Chador", "id": "12210038" },
+      { "name": "Kenc Tshering", "id": "12210095" }
+    ],
+    "guide": "Ms. Jigme Wangmo",
+    "semester": "Spring Semester 2024",
+    "year": "4th year"
+  },
+  {
+    "id": 9,
+    "category": "Fullstack",
+    "short": "Apu Gutho",
+    "summary": "Digital Bhutanese game.",
+    "learnTitle": "Apu Gutho (Druk Mancala)",
+    "learnDesc": "Apu Gutho, also known as Druk Mancala, is a digital version of a traditional Bhutanese board game inspired by the classic Mancala. The project focuses on preserving and presenting Bhutanese culture through a simple and interactive digital game.",
+    "image": "apu.png",
+    "image2": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b",
+    "image3": "https://images.unsplash.com/photo-1503455637927-730bce8583c0",
+    "about": [
+      "The game is designed with 7 pits, where 6 pits are paired and placed below one main pit, following a structure similar to Mancala.",
+      "Players distribute stones based on adjusted rules that reflect the Bhutanese context rather than copying the original Mancala rules directly."
+    ],
+    "howItWorks": [
+      { "title": "Game Structure", "desc": "7 pits layout with 6 paired pits and 1 main pit", "icon": "🎲" },
+      { "title": "Stone Distribution", "desc": "Players move stones based on adapted gameplay rules", "icon": "⚪" },
+      { "title": "Gameplay Objective", "desc": "Strategically collect and manage stones to win", "icon": "🏆" }
+    ],
+    "features": ["Game", "Culture", "UI", "Easy appointment scheduling system", "Centralized pet and medical information", "Verified veterinarian profiles", "Role-based access (User, Vet, Admin)", "Improved communication between clients and veterinarians"],
+    "developers": [
+      { "name": "Dorji Tsheten", "id": "12210007" },
+      { "name": "Kumar Rai", "id": "12210058" },
+      { "name": "Tashi Wangdi", "id": "12210095" },
+      { "name": "Chador", "id": "12210038" },
+      { "name": "Kenc Tshering", "id": "12210095" }
+    ],
+    "guide": "Ms. Jigme Wangmo",
+    "semester": "Spring Semester 2024",
+    "year": "4th year"
+  },
+  {
+    "id": 10,
+    "category": "Fullstack",
+    "short": "Druk Ghi Makhu",
+    "summary": "Fuel delivery system.",
+    "learnTitle": "Druk Ghi Makhu (DGM)",
+    "learnDesc": "Druk Ghi Makhu is a concept-based mobile application designed to simplify fuel refilling for vehicle owners in Bhutan. The idea is to allow users to request fuel delivery remotely, reducing the need to physically visit fuel stations. Through the app. users can place a fuel request from their home, office, or other locations.",
+    "image": "drukghi.png",
+    "image2": "https://images.unsplash.com/photo-1518291344630-4857135fb581",
+    "image3": "https://images.unsplash.com/photo-1509391366360-2e959784a276",
+    "about": [
+      "The systern is intended to manage the request process in a simple and user-friendly way, focusing on convenience and time-saving",
+      "The core objective of this project is to explore how digital solutions can improve everyciay services in Shutan, using a mobile platform to address common challenges related to fuel access and waiting time"
+    ],
+    "howItWorks": [
+      { "title": "Request Fuel", "desc": "Users place fuel orders from their current location", "icon": "⛽" },
+      { "title": "Delivery Process", "desc": "System manages and processes fuel delivery requests", "icon": "🚚" },
+      { "title": "User Interaction", "desc": "Simple interface for tracking and managing requests", "icon": "📍" }
+    ],
+    "features": ["Remote", "Fast", "Simple", "Remote fuel request from any location", "User-friendly mobile interface", "Time-saving and convenient service", "Simplified request and delivery floe"],
+    "developers": [
+      { "name": "Dorji Tsheten", "id": "12210007" },
+      { "name": "Kumar Rai", "id": "12210058" },
+      { "name": "Tashi Wangdi", "id": "12210095" },
+      { "name": "Chador", "id": "12210038" },
+      { "name": "Kenc Tshering", "id": "12210095" }
+    ],
+    "guide": "Ms. Jigme Wangmo",
+    "semester": "Spring Semester 2024",
+    "year": "4th year"
+  },
+  {
+    "id": 11,
+    "category": "Computer Science",
+    "short": "G-Iteria",
+    "summary": "Cafeteria ordering system.",
+    "learnTitle": "G-iteria: Streamlined Cafeteria & Online Ordering System",
+    "learnDesc": "G-iteria is a web-based cafeteria ordering system designed to simplify the food ordering process through a clean and efficient digital platform. The project focuses on creating a fast and straightforward user experience where customers can view menus and place orders without unnecessary complexity.",
+    "image": "g.png",
+    "image2": "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    "image3": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+    "about": [
+      "The system is built with an emphasis on performance and reliability, using a simple frontend and a server-centric backend approach.",
+      "Instead of relying on heavy frameworks, the project explores how a lightweight architecture can still support essential features such as order submission and basic administration."
+    ],
+    "howItWorks": [
+      { "title": "Browse Menu", "desc": "Users view available food items through a clean interface", "icon": "🍽️" },
+      { "title": "Place Order", "desc": "Select items and submit orders", "icon": "🧾" },
+      { "title": "Order Processing", "desc": "System handles orders through a server-centric backend", "icon": "⚙️" }
+    ],
+    "features": ["Fast", "Simple", "Efficient", "Simple and intuitive menu browsing", "Quick and easy order placement", "Lightweight and efficient system architecture", "Basic order management and administration"],
+    "developers": [
+      { "name": "Dorji Tsheten", "id": "12210007" },
+      { "name": "Kumar Rai", "id": "12210058" },
+      { "name": "Tashi Wangdi", "id": "12210095" },
+      { "name": "Chador", "id": "12210038" },
+      { "name": "Kenc Tshering", "id": "12210095" }
+    ],
+    "guide": "Ms. Jigme Wangmo",
+    "semester": "Spring Semester 2024",
+    "year": "4th year"
+  }
+]
