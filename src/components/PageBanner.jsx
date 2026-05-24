@@ -16,14 +16,14 @@ export default function PageBanner({ title, subtitle, image, fade = false }) {
         {fade && <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />}
       </div>
 
-      <div className="relative mx-auto flex h-full w-full max-w-[90%] flex-col items-start justify-end px-4 pb-20 md:px-6 md:pb-24">
+      <div className="relative mx-auto flex h-full w-full max-w-[90%] flex-col items-start justify-end px-4 pb-16 md:px-6 md:pb-20">
         <motion.div
           initial={{ opacity: 0, x: 80, y: 100 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1
-            className="!text-xl text-left !text-white leading-[1.05] sm:!text-3xl md:!text-4xl"
+            className="!text-lg text-left !text-white leading-[1.05] sm:!text-2xl md:!text-3xl"
             style={{
               fontFamily: "'Roboto Slab', serif",
               letterSpacing: "0.05em"
@@ -32,7 +32,7 @@ export default function PageBanner({ title, subtitle, image, fade = false }) {
             {title}
           </h1>
           {subtitle && (
-            <p className="mt-2 !text-base font-semibold uppercase tracking-wide text-left !text-white md:!text-2xl">
+            <p className="mt-1.5 !text-sm font-semibold uppercase tracking-wide text-left !text-white md:!text-xl">
               {subtitle}
             </p>
           )}

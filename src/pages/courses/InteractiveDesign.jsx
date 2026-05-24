@@ -302,7 +302,7 @@ export default function InteractiveDesign() {
     <div className="">
       <Navbar overlay />
       <main className="min-h-screen">
-        <PageBanner title="BACHELOR OF INTERACTIVE DESIGN & DEVELOPMENT" image={si1} fade />
+        <PageBanner title="BACHELOR OF INTERACTIVE DESIGN & DEVELOPMENT" image={si1} />
 
         <section className="mx-auto max-w-[90%] px-4 py-10">
           <motion.div

@@ -303,7 +303,7 @@ export default function Cybersecurity() {
     <div className="bg-[#F2F5F5]">
       <Navbar overlay />
       <main className="min-h-screen">
-        <PageBanner title="BACHELOR OF COMPUTER SCIENCE" subtitle="(Cyber Security)" image={cb1} fade />
+        <PageBanner title="BACHELOR OF COMPUTER SCIENCE" subtitle="(Cyber Security)" image={cb1} />
 
         <motion.div
           className="mx-auto max-w-[90%] px-4 pt-10 pb-2 text-center"

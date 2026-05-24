@@ -304,7 +304,7 @@ export default function FullStack() {
     <div className="">
       <Navbar overlay />
       <main className="min-h-screen">
-        <PageBanner title="BACHELOR OF COMPUTER SCIENCE" subtitle="(Full Stack Development)" image={f1} fade />
+        <PageBanner title="BACHELOR OF COMPUTER SCIENCE" subtitle="(Full Stack Development)" image={f1} />
 
         <motion.div
           className="mx-auto max-w-[90%] px-4 pt-10 pb-2 text-center"

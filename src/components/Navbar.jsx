@@ -122,7 +122,7 @@ function DropdownContent({ dropdown, onClose }) {
               key={item.href}
               to={item.href}
               role="menuitem"
-              className={"flex-1 px-6 py-4 text-center text-[14px] font-semibold text-black transition-colors hover:bg-black/5" + (idx === 0 ? "" : " border-l-2 border-black/70")}
+              className={"flex-1 px-5 py-3 text-center text-[13px] font-semibold text-black transition-colors hover:bg-black/5" + (idx === 0 ? "" : " border-l-2 border-black/70")}
               onClick={onClose}
             >
               {item.label}
@@ -146,7 +146,7 @@ function DropdownContent({ dropdown, onClose }) {
             <div className="pointer-events-none absolute left-1/2 top-4 bottom-4 w-[2px] -translate-x-1/2 bg-black/80" />
             <div className="grid grid-cols-2">
               {leftItem ? (
-                <Link to={leftItem.href} role="menuitem" className="px-6 py-4 text-left text-[14px] font-semibold text-black transition-colors hover:bg-black/5" onClick={onClose}>
+                <Link to={leftItem.href} role="menuitem" className="px-5 py-3 text-left text-[13px] font-semibold text-black transition-colors hover:bg-black/5" onClick={onClose}>
                   {leftItem.label}
                 </Link>
               ) : (
@@ -154,11 +154,11 @@ function DropdownContent({ dropdown, onClose }) {
               )}
 
               {rightItem ? (
-                <Link to={rightItem.href} role="menuitem" className="px-6 py-4 text-left text-[14px] font-semibold text-black transition-colors hover:bg-black/5" onClick={onClose}>
+                <Link to={rightItem.href} role="menuitem" className="px-5 py-3 text-left text-[13px] font-semibold text-black transition-colors hover:bg-black/5" onClick={onClose}>
                   {rightItem.label}
                 </Link>
               ) : (
-                <div className="px-6 py-4" />
+                <div className="px-5 py-3" />
               )}
             </div>
           </div>
@@ -221,7 +221,7 @@ export default function Navbar({ overlay = false }) {
     <>
       <header className={"w-full text-left z-50 transition-all duration-300 ease-in-out " + (isScrolled ? "sticky top-0 left-0 right-0" : "absolute top-0 left-0 right-0")}>
         <div className={"relative w-full transition-colors duration-300 ease-in-out " + (topOverlay ? "bg-black/45 backdrop-blur-sm" : "bg-[#3d3d3f]")}>
-          <div className="mx-auto flex w-full max-w-[90%] items-center px-4 py-3 md:px-6">
+          <div className="mx-auto flex w-full max-w-[90%] items-center px-4 py-2 md:px-6">
             {/* Logo Section */}
             <div className="flex flex-1 items-center">
               <Link to="/" className="flex min-w-0 items-center gap-2 text-white" aria-label="Home">
@@ -232,7 +232,7 @@ export default function Navbar({ overlay = false }) {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden items-center gap-6 text-[16px] font-semibold text-white/90 md:flex">
+            <nav className="hidden items-center gap-5 text-[15px] font-semibold text-white/90 md:flex">
               {navItems.map((item) => {
                 const isOpen = openItem === item.label;
 

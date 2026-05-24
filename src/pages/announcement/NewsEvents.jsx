@@ -138,15 +138,15 @@ export default function NewsEvents() {
     <div className="w-full">
       <Navbar overlay />
 
-      <PageBanner title="NEWS & EVENTS" subtitle="Stay updated with the latest happenings at GCIT" image={newsbanner} />
+      <PageBanner title="NEWS & EVENTS" subtitle="" image={newsbanner} />
 
       <div className="mx-auto w-[85%]">
-        <div className="pt-24">
+        <div className="pt-20">
           <FadeInLeft>
-            <h3 className="text-2xl md:text-3xl font-bold text-black mb-6 font-['Roboto_Slab']">GCIT News and Events</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-black mb-5 font-['Roboto_Slab']">GCIT News and Events</h3>
           </FadeInLeft>
           <FadeInRight>
-            <p className="text-sm text-black w-full pb-20 text-left">
+            <p className="text-sm text-black w-full pb-16 text-left">
               Stay up to date with the latest happenings at Gyalpozhing College of Information Technology (GCIT). Explore stories about student achievements, innovative projects,
               campus events, academic collaborations, and institutional milestones. This section highlights how GCIT continues to foster innovation, creativity, and excellence in
               technology and education — shaping the next generation of digital leaders in Bhutan.
@@ -154,13 +154,13 @@ export default function NewsEvents() {
           </FadeInRight>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 pb-16">
-          <div className="lg:col-span-2 space-y-8">
+        <div className="grid lg:grid-cols-3 gap-6 pb-14">
+          <div className="lg:col-span-2 space-y-6">
             {mainStories.map((story, index) => (
               <FadeInLeft key={story.id} delay={index * 200}>
-                <div className="space-y-4">
-                  <img src={story.image} alt={story.title} className="w-full h-96 object-cover rounded-xl" />
-                  <h3 className="text-xl font-bold text-black cursor-pointer hover:text-[#f48b1a] transition-colors text-left" onClick={() => navigate(`/news/${story.id}`)}>
+                <div className="space-y-3">
+                  <img src={story.image} alt={story.title} className="w-full h-80 object-cover rounded-xl" />
+                  <h3 className="text-lg font-bold text-black cursor-pointer hover:text-[#f48b1a] transition-colors text-left" onClick={() => navigate(`/news/${story.id}`)}>
                     {story.title}
                   </h3>
                   <p className="text-sm text-black text-left">{story.description}</p>
@@ -171,20 +171,20 @@ export default function NewsEvents() {
 
           <div>
             <FadeInRight>
-              <p className="text-2xl font-semibold mb-6 text-left text-black pb-5">Latest</p>
+              <p className="text-xl font-semibold mb-5 text-left text-black pb-4">Latest</p>
             </FadeInRight>
-            <div className="space-y-4">
+            <div className="space-y-3">
               {latestStories.map((story, index) => (
                 <FadeInRight key={story.id} delay={index * 100}>
                   <div
-                    className="bg-white rounded-xl shadow p-4 cursor-pointer hover:shadow-lg transition-shadow flex justify-between items-center gap-4"
+                    className="bg-white rounded-xl shadow p-3 cursor-pointer hover:shadow-lg transition-shadow flex justify-between items-center gap-3"
                     onClick={() => navigate(`/news/${story.id}`)}
                   >
                     <div className="flex-1 text-left">
-                      <p className="font-semibold text-sm text-black mb-2">{story.title}</p>
-                      <p className="text-xs text-black">{story.description}</p>
+                      <p className="font-semibold text-xs text-black mb-1">{story.title}</p>
+                      <p className="text-[11px] text-black">{story.description}</p>
                     </div>
-                    <img src={story.image} alt={story.title} className="w-16 h-16 object-cover rounded-lg flex-shrink-0" />
+                    <img src={story.image} alt={story.title} className="w-14 h-14 object-cover rounded-lg flex-shrink-0" />
                   </div>
                 </FadeInRight>
               ))}

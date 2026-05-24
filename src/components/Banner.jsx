@@ -32,8 +32,8 @@ export default function Banner({ title = "Default Title", subtitle = "Default Su
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <p className="roboto-slab-banner text-xl !text-white leading-[1.05] tracking-wide sm:text-3xl md:text-4xl">
-            EMPOWERING THE NEXT GENERATION
+          <p className="roboto-slab-banner !text-white leading-[1.05] tracking-wide text-[18px] sm:text-[22px] md:text-[28px]">
+            EMPOWERING THE NEXT GENERATION 
             <span className="md:block mt-3">OF INNOVATORS</span>
           </p>
 

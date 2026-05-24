@@ -304,7 +304,7 @@ export default function AiDataScience() {
     <div className="">
       <Navbar overlay />
       <main className="min-h-screen">
-        <PageBanner title="BACHELOR OF COMPUTER SCIENCE" subtitle="(AI Development and Data Science)" image={a1} fade />
+        <PageBanner title="BACHELOR OF COMPUTER SCIENCE" subtitle="(AI Development and Data Science)" image={a1}  />
 
         {/* Intro section */}
         <motion.div
