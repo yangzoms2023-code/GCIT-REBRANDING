@@ -60,7 +60,7 @@ function ImageCard({ title, image, readMore = true, titlePosition = "bottom", cl
         <>
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-black/50" />
           <div className="absolute left-0 right-0 top-0 p-4 w-[90%]">
-            <h3 className="text-left text-[20px] font-bold leading-snug transition-colors duration-300" style={{ color: hovered ? "#f48b1a" : "#ffffff" }}>
+            <h3 className="text-left text-base font-bold leading-snug transition-colors duration-300" style={{ color: hovered ? "#f48b1a" : "#ffffff" }}>
               {title}
             </h3>
           </div>
@@ -91,30 +91,30 @@ const slideUp = { hidden: { opacity: 0, y: 80 }, visible: { opacity: 1, y: 0, tr
 
 export default function NewsSection() {
   return (
-    <section className="w-full py-10">
+    <section className="w-full py-16">
       <div className="mx-auto max-w-[90%] px-4 md:px-6">
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: false, margin: "0px 0px -20% 0px" }}>
           <motion.h2 className="!mb-[56px] !text-[32px] !font-bold !font-black !tracking-tight !text-black text-left" variants={slideLeft}>
             News & Events
           </motion.h2>
 
-          <div className="grid grid-cols-1 gap-3 md:grid-cols-[5fr_2fr_2fr] md:items-stretch">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-[5fr_2fr_2fr] md:items-stretch">
             {/* Left column */}
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-4">
               <motion.div variants={slideLeft}>
-                <ImageCard title="Her Majesty Gyalyum Dorji Wangmo Wangchuck visited GCIT" image={n1} className="h-56" titlePosition="top" newsId="royal-visit" />
+                <ImageCard title="Her Majesty Gyalyum Dorji Wangmo Wangchuck visited GCIT" image={n1} className="h-72" titlePosition="top" newsId="royal-visit" />
               </motion.div>
-              <motion.div className="grid grid-cols-2 gap-3" variants={slideLeft}>
-                <ImageCard title="BUSF Regional Tournament 2025 – at NRC!" image={n4} className="h-40" titlePosition="top" newsId="cybersecurity" />
-                <ImageCard title="Training on University Teaching-Learning Pedagogy" image={n5} className="h-40" titlePosition="top" newsId="young-innovators" />
+              <motion.div className="grid grid-cols-2 gap-4" variants={slideLeft}>
+                <ImageCard title="BUSF Regional Tournament 2025 – at NRC!" image={n4} className="h-52" titlePosition="top" newsId="cybersecurity" />
+                <ImageCard title="Training on University Teaching-Learning Pedagogy" image={n5} className="h-52" titlePosition="top" newsId="young-innovators" />
               </motion.div>
             </div>
 
             {/* Middle column */}
-            <motion.div className="flex flex-col gap-3" variants={slideUp}>
-              <ImageCard title="The Royal Family graced GCIT's 2025 Capstone Tech Innovation Showcase." image={n2} titlePosition="top" className="min-h-56 flex-1" newsId="royal-visit" />
-              <div className="rounded-2xl bg-[#0d1b3e] p-4 text-white">
-                <h3 className="text-[13px] font-bold leading-snug">JOIN GCIT'S FAMILY! | Looking for an Assistant Lecturer in Interactive Design & Development</h3>
+            <motion.div className="flex flex-col gap-4" variants={slideUp}>
+              <ImageCard title="The Royal Family graced GCIT's 2025 Capstone Tech Innovation Showcase." image={n2} titlePosition="top" className="min-h-72 flex-1" newsId="royal-visit" />
+              <div className="rounded-2xl bg-[#0d1b3e] p-5 text-white">
+                <h3 className="text-left text-[13px] font-bold leading-snug">JOIN GCIT'S FAMILY! | Looking for an Assistant Lecturer in Interactive Design & Development</h3>
                 <p className="mt-2 text-[11px] text-white/50">Registration closes: December 05, 2025</p>
                 <div className="mt-3 flex justify-end">
                   <a
@@ -128,8 +128,8 @@ export default function NewsSection() {
             </motion.div>
 
             {/* Right column */}
-            <motion.div className="flex flex-col gap-3" variants={slideRight}>
-              <div className="rounded-2xl bg-gray-100 p-4">
+            <motion.div className="flex flex-col gap-4" variants={slideRight}>
+              <div className="rounded-2xl bg-gray-100 p-5">
                 <div className="flex items-start gap-3">
                   <span className="mt-0.5 shrink-0 text-gray-500">
                     <FlagIcon />
@@ -140,7 +140,7 @@ export default function NewsSection() {
                   </div>
                 </div>
               </div>
-              <ImageCard title="Welcome Show" image={n3} titlePosition="top" className="h-52" newsId="zhingscan" />
+              <ImageCard title="Welcome Show" image={n3} titlePosition="top" className="h-64" newsId="zhingscan" />
               <div className="mt-auto flex justify-end">
                 <a href="/announcement/news-events" className="flex items-center gap-1 text-sm font-semibold text-black hover:text-[#f48b1a]">
                   See More ...
