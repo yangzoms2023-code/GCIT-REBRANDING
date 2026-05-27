@@ -45,6 +45,7 @@ export default function Banner({ title = "Default Title", subtitle = "Default Su
               Explore now
             </a>
           </div>
+
         </motion.div>
       </div>
 
