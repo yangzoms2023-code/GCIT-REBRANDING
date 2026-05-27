@@ -38,13 +38,13 @@ const sections = [
           <div>ict.gct@rub.edu.bt</div>
         </div>
         <div className="mt-5 flex items-center gap-4">
-          <a href="#" aria-label="Facebook" className="grid h-7 w-7 place-items-center rounded-full bg-white text-[#f48b1a] hover:bg-white/90">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="grid h-7 w-7 place-items-center rounded-full bg-white text-[#f48b1a] hover:bg-white/90">
             <FacebookIcon />
           </a>
-          <a href="#" aria-label="YouTube" className="grid h-7 w-7 place-items-center rounded-full bg-white text-[#f48b1a] hover:bg-white/90">
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="grid h-7 w-7 place-items-center rounded-full bg-white text-[#f48b1a] hover:bg-white/90">
             <YouTubeIcon />
           </a>
-          <a href="#" aria-label="LinkedIn" className="grid h-7 w-7 place-items-center rounded-full bg-white text-[#f48b1a] hover:bg-white/90">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="grid h-7 w-7 place-items-center rounded-full bg-white text-[#f48b1a] hover:bg-white/90">
             <LinkedInIcon />
           </a>
         </div>
@@ -56,25 +56,11 @@ const sections = [
     content: (
       <div className="grid grid-cols-2 gap-x-6 gap-y-1 text-sm">
         <div className="flex flex-col gap-1">
-          {[
-            "Happiness and Wellbeing Center",
-            "ICT Help Desk",
-            "Estate Help Desk",
-            "CCA",
-            "Library Catalog (OPAC) - Koho",
-            "RUB-Information Management System",
-            "RUB Web Mail",
-          ].map((item) => (
-            <a key={item} href="#" className="hover:underline text-left">{item}</a>
-          ))}
-        </div>
-        <div className="flex flex-col gap-1">
-          {[
-            "Virtual Learning Environment – Moodle",
-            "Staff Residence Application Form",
-          ].map((item) => (
-            <a key={item} href="#" className="hover:underline text-left">{item}</a>
-          ))}
+          <a href="https://docs.google.com/forms/u/0/d/1wKenT38X4syoJBFPMY58qVtGtNsdHBzVpNUrsdC4Gz0/viewform?pli=1/&pli=1/&edit_requested=true" className="hover:underline text-left">Estate Help Desk</a>
+          <a href="https://cca.gcit.edu.bt/" target="_blank" rel="noopener noreferrer" className="hover:underline text-left">CCA</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScp9HCeB1xBpg6QjlxpmvGSZiebPPM2RTanxEmU7fR4WtmNIQ/viewform" className="hover:underline text-left">ICT Help Desk</a>
+          <a href="https://ims.rub.edu.bt/public/auth/view-login" className="hover:underline text-left">RUB-Information Management System</a>
+          <a href="https://vle.gcit.edu.bt/login/index.php" className="hover:underline text-left">Virtual Learning Environment – Moodle</a>
         </div>
       </div>
     ),
@@ -83,17 +69,13 @@ const sections = [
     label: "Quick-Links",
     content: (
       <div className="flex flex-col gap-1 text-sm">
-        {[
-          "GovTech Agency",
-          "Ministry of Education and Skills Development",
-          "Ministry of Industry Commerce & Employment",
-          "G2C Services",
-          "Royal Civil Service Service Commission",
-          "Royal University of Bhutan",
-          "Admission Criteria 2024 - RUB",
-        ].map((item) => (
-          <a key={item} href="#" className="hover:underline text-left">{item}</a>
-        ))}
+        <a href="https://tech.gov.bt/" className="hover:underline text-left">GovTech Agency</a>
+        <a href="https://education.gov.bt/" className="hover:underline text-left">Ministry of Education and Skills Development</a>
+        <a href="https://www.moice.gov.bt/" className="hover:underline text-left">Ministry of Industry Commerce & Employment</a>
+        <a href="https://www.citizenservices.gov.bt/g2cportal/ListOfLifeEventComponent" className="hover:underline text-left">G2C Services</a>
+        <a href="https://rcsc.gov.bt/" className="hover:underline text-left">Royal Civil Service Service Commission</a>
+        <a href="https://www.rub.edu.bt/" className="hover:underline text-left">Royal University of Bhutan</a>
+        <a href="/news/admissions-open" className="hover:underline text-left">Admission Criteria 2024 - RUB</a>
       </div>
     ),
   },
@@ -101,15 +83,7 @@ const sections = [
     label: "Downloads",
     content: (
       <div className="flex flex-col gap-1 text-sm">
-        {[
-          "Class Trip Form",
-          "Forms",
-          "GCIT Strategic Plan",
-          "Monday Assembly Agenda Item",
-          "Time and Stress Management Flyer",
-        ].map((item) => (
-          <a key={item} href="#" className="hover:underline text-left">{item}</a>
-        ))}
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKbZGPh-5GSHC3AdYs-eqYtOLwbwnN4elqeGQsrwGC5Ettpw/closedform" className="hover:underline text-left">Class Trip Form</a>
       </div>
     ),
   },
