@@ -263,8 +263,8 @@ function CourseModules() {
   const [open, setOpen] = useState(null);
   return (
     <section className="mx-auto max-w-[90%] px-4 py-14">
-      <h2 className="!mb-8 text-center !text-[32px] !font-bold text-black">Course Modules</h2>
-      <p className="!mb-8 text-[17px] leading-relaxed text-gray-700">
+      <h2 className="!mb-8 text-center !text-2xl !font-bold text-black">Course Modules</h2>
+      <p className="!mb-8 text-[15px] leading-relaxed text-gray-700">
         Students will have to complete 60 credits in each semester. In total, a student has to complete 480 credits to be eligible for the award of a Bachelor of Computer Science
         (Cybersecurity).
       </p>
@@ -312,12 +312,12 @@ export default function Cybersecurity() {
           viewport={{ once: false }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <p className="text-[32px] font-bold text-black">Become a Guardian of Digital Security</p>
+          <p className="text-2xl font-bold text-black">Become a Guardian of Digital Security</p>
         </motion.div>
 
         <section className="mx-auto max-w-[90%] px-4 py-10">
           <motion.p
-            className="!mb-20 text-left text-[17px] leading-relaxed text-gray-700"
+            className="!mb-20 text-left text-[15px] leading-relaxed text-gray-700"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}

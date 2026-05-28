@@ -102,25 +102,25 @@ export default function ICT() {
 
       <PageBanner
         title="Information & Communication Technology"
-        subtitle="Delivering seamless technology to support learning and operations at GCIT."
+        subtitle="Delivering seamless GCIT technology"
         image={ictbanner}
       />
 
       <div className="mx-auto w-[85%] py-24 text-left">
         <FadeInLeft>
-          <h3 className="text-3xl font-bold mb-8 text-black font-['Roboto_Slab']">
+          <h3 className="text-2xl font-bold mb-8 text-black font-['Roboto_Slab']">
             Information & Communication Technology
           </h3>
         </FadeInLeft>
 
         <FadeInRight>
-          <p className="text-gray-600 text-base leading-relaxed">
+          <p className="text-gray-600 text-[15px] leading-relaxed">
             Information & Communication Technology (ICT) team is responsible for the planning, management, and implementation of technology initiatives in support of both academic and non academic operations at the college.
           </p>
         </FadeInRight>
 
         <FadeInLeft>
-          <h3 className="text-xl font-semibold mt-16 mb-10 text-black font-['Roboto_Slab']">
+          <h3 className="text-2xl font-semibold mt-16 mb-10 text-black font-['Roboto_Slab']">
             Core Team
           </h3>
         </FadeInLeft>
@@ -151,26 +151,26 @@ export default function ICT() {
 
         <FadeInLeft>
           <div className="bg-white rounded-xl shadow-md p-16">
-            <p className="text-base text-gray-700 mb-4 pb-8">
+            <p className="text-[15px] text-gray-700 mb-4 pb-8">
               ICT team provides the campus community a diverse set of technology services as per the new college blueprint of expansion. Keep the lights on (KLO) is their priority.
             </p>
 
-            <p className="text-base text-gray-700 mb-4">
+            <p className="text-[15px] text-gray-700 mb-4">
               Their responsibilities include development, sourcing, implementation and maintenance of:
             </p>
 
-            <ul className="list-disc pl-6 text-base text-gray-600 space-y-3">
+            <ul className="list-disc pl-6 text-[15px] text-gray-600 space-y-3">
               <li>Network connectivities (WAN and LAN).</li>
               <li>Infrastructure components of server, storage and backup.</li>
               <li>Computer labs system and wireless access for classrooms.</li>
               <li>Cybersecurity for campus network and system.</li>
             </ul>
 
-            <p className="text-base text-gray-700 mt-8 mb-4">
+            <p className="text-[15px] text-gray-700 mt-8 mb-4">
               Our ICT team also ensures the availability and reliability of key applications that support our college daily functions.
             </p>
 
-            <ul className="list-disc pl-6 text-base text-gray-600 space-y-3">
+            <ul className="list-disc pl-6 text-[15px] text-gray-600 space-y-3">
               <li>Online teaching and e-learning using Moodle Virtual Learning Environment (VLE).</li>
               <li>Management of library catalog online access system (KOHA).</li>
               <li>Administration and customisation of RUB Information Management System (IMS) for effective teaching, assessments and database.</li>

@@ -253,7 +253,7 @@ export default function TenderDetails() {
 
       <PageBanner
         title="TENDER DETAILS"
-        subtitle="Comprehensive information about tender opportunities at GCIT"
+        subtitle="GCIT tender opportunities information"
         image={tenderdetailsbanner}
       />
 

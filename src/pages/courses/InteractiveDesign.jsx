@@ -262,8 +262,8 @@ function CourseModules() {
   const [open, setOpen] = useState(null);
   return (
     <section className="mx-auto max-w-[90%] px-4 py-14">
-      <h2 className="!mb-8 text-center !text-[32px] !font-bold text-black">Course Modules</h2>
-      <p className="!mb-8 text-[17px] leading-relaxed text-gray-700">
+      <h2 className="!mb-8 text-center !text-2xl !font-bold text-black">Course Modules</h2>
+      <p className="!mb-8 text-[15px] leading-relaxed text-gray-700">
         Students will have to complete 60 credits in each semester. In total, a student has to complete 480 credits to be eligible for the award of a Bachelor of Interactive Design
         &amp; Development.
       </p>

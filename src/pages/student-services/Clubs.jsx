@@ -149,12 +149,12 @@ export default function Clubs() {
   return (
     <div className="bg-[#F2F5F5]">
       <Navbar overlay />
-      <PageBanner title="GCIT CLUBS" subtitle="Explore your passions, connect with peers, and grow with GCIT Clubs." image={clubbanner} />
+      <PageBanner title="GCIT CLUBS" subtitle="Supporting students holistically" image={clubbanner} />
 
       <main className="mx-auto max-w-[90%] px-4 py-10 bg-[#F2F5F5]">
         {/* Section heading */}
         <motion.h2
-          className="!text-[32px] text-left !font-bold text-black"
+          className="!text-2xl text-left !font-bold text-black"
           initial={{ opacity: 0, x: -55 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false }}
@@ -163,7 +163,7 @@ export default function Clubs() {
           GCIT Clubs
         </motion.h2>
         <motion.p
-          className="!mt-[30px] text-left text-[17px] text-gray-500"
+          className="!mt-[30px] text-left text-[15px] text-gray-500"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
@@ -223,7 +223,7 @@ export default function Clubs() {
                     {club.name}
                   </motion.h3>
                   <motion.p
-                    className="!mt-6 text-left text-[17px] leading-relaxed text-gray-700"
+                    className="!mt-6 text-left text-[15px] leading-relaxed text-gray-700"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false }}
@@ -253,7 +253,7 @@ export default function Clubs() {
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.15 }}
             >
               <motion.p
-                className="text-[17px] text-left font-semibold text-[#f48b1a]"
+                className="text-[15px] text-left font-semibold text-[#f48b1a]"
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: false }}
@@ -265,7 +265,7 @@ export default function Clubs() {
                 {club.objectives.map((obj, i) => (
                   <motion.li
                     key={i}
-                    className="flex items-start gap-2 text-left text-[17px] leading-relaxed text-gray-700"
+                    className="flex items-start gap-2 text-left text-[15px] leading-relaxed text-gray-700"
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: false }}
@@ -306,7 +306,7 @@ export default function Clubs() {
                   >
                     <img src={advisor.image} alt={advisor.name} className="h-50 w-50 rounded-xl object-cover" />
                     <motion.span
-                      className="text-[17px] font-medium text-gray-700"
+                      className="text-[15px] font-medium text-gray-700"
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: false }}

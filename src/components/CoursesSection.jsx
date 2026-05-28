@@ -281,7 +281,7 @@ export default function CoursesSection() {
           ))}
         </motion.div>
 
-        <motion.h2 className="courses-title" variants={headerVariants}>
+        <motion.h2 className="courses-title !text-2xl" variants={headerVariants}>
           Courses
         </motion.h2>
       </motion.div>

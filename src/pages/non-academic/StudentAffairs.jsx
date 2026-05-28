@@ -113,19 +113,19 @@ export default function StudentAffairs() {
 
       <div className="mx-auto w-[85%] py-24 text-left">
         <FadeInLeft>
-          <h3 className="text-3xl font-bold mb-8 text-black font-['Roboto_Slab']">
+          <h3 className="text-2xl font-bold mb-8 text-black font-['Roboto_Slab']">
             Student Affairs
           </h3>
         </FadeInLeft>
 
         <FadeInRight>
-          <p className="text-gray-600 text-base leading-relaxed">
+          <p className="text-gray-600 text-[15px] leading-relaxed">
             This team advocates for student development through Inspire, Challenge and Empower (ICE) Model. The interaction of the student and their learning environment is critical to the success of the student in their tertiary education.
           </p>
         </FadeInRight>
 
         <FadeInLeft>
-          <h3 className="text-xl font-semibold mt-16 mb-10 text-black font-['Roboto_Slab']">
+          <h3 className="text-2xl font-semibold mt-16 mb-10 text-black font-['Roboto_Slab']">
             Core Team
           </h3>
         </FadeInLeft>
@@ -152,11 +152,11 @@ export default function StudentAffairs() {
 
         <FadeInLeft>
           <div className="bg-white rounded-xl shadow-md p-16">
-            <p className="text-base text-gray-700 mb-4">
+            <p className="text-[15px] text-gray-700 mb-4">
               The following are the foundations of the model:
             </p>
 
-            <ul className="list-disc pl-6 text-base text-gray-600 space-y-3">
+            <ul className="list-disc pl-6 text-[15px] text-gray-600 space-y-3">
               <li>
                 Inspiring students by facilitating interactions with business communities
                 and FANG like companies. This will help the students to broaden their
@@ -177,11 +177,11 @@ export default function StudentAffairs() {
               </li>
             </ul>
 
-            <p className="text-base text-gray-700 mt-8 mb-4">
+            <p className="text-[15px] text-gray-700 mt-8 mb-4">
               The team's other key responsibilities will include:
             </p>
 
-            <ul className="list-disc pl-6 text-base text-gray-600 space-y-3">
+            <ul className="list-disc pl-6 text-[15px] text-gray-600 space-y-3">
               <li>Organizing orientation and graduation process for all students.</li>
               <li>
                 Ensuring students adhering to College's student code of conduct.

@@ -11,7 +11,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import n1 from "../assets/images/n1.jpg";
-import n2 from "../assets/images/n2.jpg";
+import n2 from "../assets/images/t1.jpg";
 import n3 from "../assets/images/n3.jpg";
 import n4 from "../assets/images/n4.jpg";
 import n5 from "../assets/images/n5.jpg";
@@ -94,7 +94,7 @@ export default function NewsSection() {
     <section className="w-full py-16">
       <div className="mx-auto max-w-[90%] px-4 md:px-6">
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: false, margin: "0px 0px -20% 0px" }}>
-          <motion.h2 className="!mb-[56px] !text-[32px] !font-bold !font-black !tracking-tight !text-black text-left" variants={slideLeft}>
+          <motion.h2 className="!mb-[56px] !text-center !text-2xl !font-bold !font-black !tracking-tight !text-black text-left" variants={slideLeft}>
             News & Events
           </motion.h2>
 

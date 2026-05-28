@@ -39,7 +39,7 @@ export default function Ict() {
 
       <main className="mx-auto max-w-[90%] px-4 py-14 bg-[#F2F5F5]">
         <motion.h2
-          className="!text-[32px] text-left !font-bold !font-black text-black"
+          className="!text-2xl text-left !font-bold !font-black text-black"
           initial={{ opacity: 0, x: -55 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false }}
@@ -48,7 +48,7 @@ export default function Ict() {
           ICT Services
         </motion.h2>
         <motion.p
-          className="!mt-5 text-[17px] text-left leading-relaxed text-gray-600"
+          className="!mt-5 text-[15px] text-left leading-relaxed text-gray-600"
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
@@ -74,8 +74,8 @@ export default function Ict() {
                 </div>
               )}
               <div className="md:w-[60%]">
-                <h3 className="!text-[25px] text-left !font-bold !text-black">{service.title}</h3>
-                <p className="!mt-3 !text-[17px] text-left !leading-relaxed !text-gray-600">{service.description}</p>
+                <h3 className="!text-2xl text-left !font-bold !text-black">{service.title}</h3>
+                <p className="!mt-3 !text-[15px] text-left !leading-relaxed !text-gray-600">{service.description}</p>
               </div>
               {service.imageRight && (
                 <div className="shrink-0 md:w-56">

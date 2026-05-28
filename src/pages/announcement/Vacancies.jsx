@@ -118,7 +118,7 @@ export default function Vacancies() {
 
       <PageBanner
         title="VACANCIES"
-        subtitle="Explore career opportunities at GCIT and join our team of innovators"
+        subtitle="Explore careers at GCIT"
         image={vacanciesbanner}
       />
 

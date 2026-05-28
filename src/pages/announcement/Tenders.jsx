@@ -113,7 +113,7 @@ export default function Tender() {
 
       <PageBanner
         title="TENDER"
-        subtitle="Explore procurement opportunities and bid for tenders at GCIT"
+        subtitle="Explore GCIT procurement tenders"
         image={tenderbanner}
       />
 
@@ -203,13 +203,13 @@ export default function Tender() {
               ))}
             </div>
 
-            <FadeInRight delay={500}>
+            {/* <FadeInRight delay={500}>
               <div className="mt-6">
                 <button className="w-full bg-[#f48b1a] hover:bg-[#e07a0f] text-white py-2 rounded-full text-sm">
                   View All
                 </button>
               </div>
-            </FadeInRight>
+            </FadeInRight> */}
           </div>
         </div>
       </div>

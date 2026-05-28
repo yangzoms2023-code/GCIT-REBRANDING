@@ -21,7 +21,7 @@ export default function Library() {
 
       <main className="mx-auto max-w-[90%] px-4 py-14 bg-[#F2F5F5]">
         <motion.p
-          className="text-[20px] text-gray-700 text-left"
+          className="text-[15px] text-gray-700 text-left"
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
@@ -52,15 +52,15 @@ export default function Library() {
             viewport={{ once: false }}
             transition={{ duration: 0.75, ease: "easeOut", delay: 0.15 }}
           >
-            <h3 className="text-[32px] text-left font-bold text-black">E-Library</h3>
-            <p className="!mt-4 text-[17px] text-left leading-relaxed text-gray-700">
+            <h3 className="text-2xl text-left font-bold text-black">E-Library</h3>
+            <p className="!mt-4 text-[15px] text-left leading-relaxed text-gray-700">
               O'Reilly is an online library service that provides access to a vast collection of technology and
               business-related e-books, videos, and learning resources. It's an excellent resource for college
               students who need to stay up-to-date with the latest technologies and trends in their field. With
               O'Reilly, students can access a wealth of information from anywhere, at any time, with just an
               internet connection.
             </p>
-            <p className="!mt-6 text-[17px] text-left leading-relaxed text-gray-700">
+            <p className="!mt-6 text-[15px] text-left leading-relaxed text-gray-700">
               One of the main advantages of O'Reilly over a physical library is the convenience factor. Students
               can access resources and information from their dorm rooms or off-campus, saving them time and
               effort. Additionally, online library services are often more cost-effective for students since they

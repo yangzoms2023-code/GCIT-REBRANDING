@@ -190,11 +190,11 @@ export default function NewsEvents() {
               ))}
             </div>
 
-            <FadeInRight delay={500}>
+            {/* <FadeInRight delay={500}>
               <div className="mt-6">
                 <button className="w-full bg-[#f48b1a] hover:bg-[#e07a0f] text-white py-2 rounded-full text-sm">View All News</button>
               </div>
-            </FadeInRight>
+            </FadeInRight> */}
           </div>
         </div>
       </div>

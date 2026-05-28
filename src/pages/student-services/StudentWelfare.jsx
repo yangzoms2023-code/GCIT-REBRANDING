@@ -18,7 +18,7 @@ export default function StudentWelfare() {
       <Navbar overlay />
       <PageBanner
         title="STUDENT WELFARE"
-        subtitle="Promoting student well-being, growth, and engagement through counseling, hostel facilities, and sports & recreational programs."
+        subtitle="Counseling, hostels, sports for well-being"
         image={welfarebanner}
       />
 
@@ -30,8 +30,8 @@ export default function StudentWelfare() {
           viewport={{ once: false }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <h2 className="!text-[26px] text-left !font-bold text-black">Student Counseling</h2>
-          <p className="!mt-6 text-[17px] text-left leading-relaxed text-gray-700">
+          <h2 className="!text-2xl text-left !font-bold text-black">Student Counseling</h2>
+          <p className="!mt-6 text-[15px] text-left leading-relaxed text-gray-700">
             Student counseling service in GCIT aims to provide students with support and guidance to address
             personal, academic, and emotional issues that may affect their overall well-being and academic
             performance. Professional counselors with specialized training offer confidential counseling services
@@ -49,8 +49,8 @@ export default function StudentWelfare() {
           viewport={{ once: false }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <h2 className="!text-[26px] text-left !font-bold text-black">Student Hospital Facility</h2>
-          <p className="!mt-6 text-[17px] text-left leading-relaxed text-gray-700">
+          <h2 className="!text-2xl text-left !font-bold text-black">Student Hospital Facility</h2>
+          <p className="!mt-6 text-[15px] text-left leading-relaxed text-gray-700">
             Gyalpozhing College of Information Technology provides comfortable residential facilities for both male
             and female students. All students are accommodated within the campus, with the college offering
             remodelled hostels as well as a newly constructed 96-bed hostel to ensure adequate space for students.
@@ -64,8 +64,8 @@ export default function StudentWelfare() {
           viewport={{ once: false }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <h2 className="!text-[26px] text-left !font-bold text-black">Sports &amp; Recreational</h2>
-          <p className="!mt-6 text-[17px] text-left leading-relaxed text-gray-700">
+          <h2 className="!text-2xl text-left !font-bold text-black">Sports &amp; Recreational</h2>
+          <p className="!mt-6 text-[15px] text-left leading-relaxed text-gray-700">
             Student Services focuses on our students' welfare by providing a range of services and resources to
             support personal, social, and academic development. This includes promoting student health and
             well-being, facilitating access to financial aid and creating opportunities for extracurricular and
@@ -73,7 +73,7 @@ export default function StudentWelfare() {
             provide students with opportunities for personal and social development outside of the academic
             curriculum.
           </p>
-          <p className="!mt-6 text-[17px] text-left leading-relaxed text-gray-700">
+          <p className="!mt-6 text-[15px] text-left leading-relaxed text-gray-700">
             The campus boasts excellent games and sports facilities, which include indoor games infrastructure.
             The college hosts regular intra-college and regional games to provide a platform for athletes and
             versatile students to showcase their skills. These games are instrumental in empowering students and
@@ -88,14 +88,14 @@ export default function StudentWelfare() {
           viewport={{ once: false }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="!text-[26px] text-left !font-bold text-black">
+          <h2 className="!text-2xl text-left !font-bold text-black">
             Gyalpozhing College Of Information Technology Sport Facilities:
           </h2>
           <ul className="!mt-3 space-y-1">
             {sportFacilities.map((item, i) => (
               <motion.li
                 key={item}
-                className="flex items-start text-[17px] text-left leading-relaxed text-gray-700"
+                className="flex items-start text-[15px] text-left leading-relaxed text-gray-700"
                 initial={{ opacity: 0, x: -25 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: false }}

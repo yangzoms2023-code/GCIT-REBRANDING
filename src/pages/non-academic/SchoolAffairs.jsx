@@ -230,22 +230,22 @@ export default function SchoolAffairs() {
 
       <div className="mx-auto w-[85%] py-24 text-left">
         <FadeInLeft>
-          <h3 className="text-3xl font-bold mb-8 text-black font-['Roboto_Slab']">
+          <h3 className="text-2xl font-bold mb-8 text-black font-['Roboto_Slab']">
             School Affairs
           </h3>
         </FadeInLeft>
 
         <FadeInRight>
-          <p className="text-gray-600 text-base leading-relaxed">
+          <p className="text-gray-600 text-[15px] leading-relaxed">
             The School Affairs department is responsible for maintaining and operating all campus facilities, ensuring a safe, clean, and vibrant environment for students and staff.
           </p>
         </FadeInRight>
 
         <FadeInLeft>
-          <h3 className="text-xl font-semibold mt-16 mb-10 text-black font-['Roboto_Slab']">
+          <h3 className="text-2xl font-semibold mt-16 mb-10 text-black font-['Roboto_Slab']">
             Team Engineering Services
           </h3>
-          <h4 className="text-xl font-semibold mb-10 text-black font-['Roboto_Slab']">Core Team</h4>
+          <h4 className="text-2xl font-semibold mb-10 text-black font-['Roboto_Slab']">Core Team</h4>
         </FadeInLeft>
 
         <FadeInRight>
@@ -254,15 +254,15 @@ export default function SchoolAffairs() {
 
         <FadeInLeft>
           <div className="bg-white rounded-xl shadow-md p-16 mt-8">
-            <p className="text-base text-gray-700 mb-4">
+            <p className="text-[15px] text-gray-700 mb-4">
               The electricity, carpentry and plumbing services make up the Engineering Services Unit. They supervise and spearhead day-to-day operations and upkeep of the college assets.
             </p>
 
-            <p className="text-base text-gray-700 mb-4">
+            <p className="text-[15px] text-gray-700 mb-4">
               Plans, manages and implements comprehensive maintenance and refurbishment programs for the college.
             </p>
 
-            <ul className="list-disc pl-6 text-base text-gray-600 space-y-3">
+            <ul className="list-disc pl-6 text-[15px] text-gray-600 space-y-3">
               <li>
                 Project manages all professional procurement and delivery of major and minor capital projects ranging from new buildings and campus improvements to alterations and refurbishment projects.
               </li>
@@ -281,10 +281,10 @@ export default function SchoolAffairs() {
         </div>
 
         <FadeInRight>
-          <h3 className="text-xl font-semibold mt-4 mb-10 text-black font-['Roboto_Slab']">
+          <h3 className="text-2xl font-semibold mt-4 mb-10 text-black font-['Roboto_Slab']">
             Team Facilities Management
           </h3>
-          <h4 className="text-xl font-semibold mb-10 text-black font-['Roboto_Slab']">Core Team</h4>
+          <h4 className="text-2xl font-semibold mb-10 text-black font-['Roboto_Slab']">Core Team</h4>
         </FadeInRight>
 
         <FadeInLeft>
@@ -293,13 +293,13 @@ export default function SchoolAffairs() {
 
         <FadeInRight>
           <div className="bg-white rounded-xl shadow-md p-16 mt-8">
-            <p className="text-base text-gray-700 mb-4">
+            <p className="text-[15px] text-gray-700 mb-4">
               The facility management unit consists of gardeners and cleaning support staff.
             </p>
 
-            <p className="text-base text-gray-700 mb-4">They are specifically responsible for the following:</p>
+            <p className="text-[15px] text-gray-700 mb-4">They are specifically responsible for the following:</p>
 
-            <ul className="list-disc pl-6 text-base text-gray-600 space-y-3">
+            <ul className="list-disc pl-6 text-[15px] text-gray-600 space-y-3">
               <li>Administrating prayer services and major religious events for the college.</li>
               <li>Ensuring cleanliness of classrooms, offices, labs, buildings and external areas.</li>
               <li>Landscaping and beautification of the campus with local flowers and plants.</li>
@@ -313,10 +313,10 @@ export default function SchoolAffairs() {
         </div>
 
         <FadeInLeft>
-          <h3 className="text-xl font-semibold mt-4 mb-10 text-black font-['Roboto_Slab']">
+          <h3 className="text-2xl font-semibold mt-4 mb-10 text-black font-['Roboto_Slab']">
             Security Services
           </h3>
-          <h4 className="text-xl font-semibold mb-10 text-black font-['Roboto_Slab']">Core Team</h4>
+          <h4 className="text-2xl font-semibold mb-10 text-black font-['Roboto_Slab']">Core Team</h4>
         </FadeInLeft>
 
         <FadeInRight>
@@ -325,11 +325,11 @@ export default function SchoolAffairs() {
 
         <FadeInLeft>
           <div className="bg-white rounded-xl shadow-md p-16 mt-8">
-            <p className="text-base text-gray-700 mb-4">
+            <p className="text-[15px] text-gray-700 mb-4">
               The Security Services team is responsible for ensuring the safety and security of the GCIT campus. They monitor and regulate movement of students, staff, and visitors.
             </p>
 
-            <ul className="list-disc pl-6 text-base text-gray-600 space-y-3">
+            <ul className="list-disc pl-6 text-[15px] text-gray-600 space-y-3">
               <li>Monitor entry and exit points at campus gates.</li>
               <li>Verify and record student leave approvals before departure.</li>
               <li>Collect and manage student ID cards during campus exit and return.</li>
@@ -345,10 +345,10 @@ export default function SchoolAffairs() {
         </div>
 
         <FadeInRight>
-          <h3 className="text-xl font-semibold mt-4 mb-10 text-black font-['Roboto_Slab']">
+          <h3 className="text-2xl font-semibold mt-4 mb-10 text-black font-['Roboto_Slab']">
             Food Services (FS)
           </h3>
-          <h4 className="text-xl font-semibold mb-10 text-black font-['Roboto_Slab']">Core Team</h4>
+          <h4 className="text-2xl font-semibold mb-10 text-black font-['Roboto_Slab']">Core Team</h4>
         </FadeInRight>
 
         <FadeInLeft>
@@ -357,13 +357,13 @@ export default function SchoolAffairs() {
 
         <FadeInRight>
           <div className="bg-white rounded-xl shadow-md p-16 mt-8">
-            <p className="text-base text-gray-700 mb-4">
+            <p className="text-[15px] text-gray-700 mb-4">
               Our Food Services function has a team of experienced cooks who prepare daily meals for all students on campus.
             </p>
 
-            <p className="text-base text-gray-700 mb-4">The key responsibilities include:</p>
+            <p className="text-[15px] text-gray-700 mb-4">The key responsibilities include:</p>
 
-            <ul className="list-disc pl-6 text-base text-gray-600 space-y-3">
+            <ul className="list-disc pl-6 text-[15px] text-gray-600 space-y-3">
               <li>Management of monthly stipend for the student population.</li>
               <li>Maintaining relationships with suppliers for kitchen operations.</li>
               <li>Regular sourcing of food supplies from local farmers.</li>
@@ -378,10 +378,10 @@ export default function SchoolAffairs() {
         </div>
 
         <FadeInLeft>
-          <h3 className="text-xl font-semibold mt-4 mb-10 text-black font-['Roboto_Slab']">
+          <h3 className="text-2xl font-semibold mt-4 mb-10 text-black font-['Roboto_Slab']">
             Library Services (LS)
           </h3>
-          <h4 className="text-xl font-semibold mb-10 text-black font-['Roboto_Slab']">Core Team</h4>
+          <h4 className="text-2xl font-semibold mb-10 text-black font-['Roboto_Slab']">Core Team</h4>
         </FadeInLeft>
         
         <div className="flex flex-wrap gap-8 justify-center">
@@ -393,7 +393,7 @@ export default function SchoolAffairs() {
                   alt={member.name}
                   className="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
                 />
-                <h4 className="font-medium text-base">{member.name}</h4>
+                <h4 className="font-medium text-[15px]">{member.name}</h4>
                 <p className="text-sm text-gray-500">{member.role}</p>
               </div>
             </FadeInRight>
@@ -401,14 +401,14 @@ export default function SchoolAffairs() {
         </div>
 
         <FadeInLeft>
-          <div className="bg-white rounded-xl shadow-md p-16 mt-8">
-            <p className="text-base text-gray-700 mb-4">
+          <div className="bg-white rounded-2xl shadow-md p-16 mt-8">
+            <p className="text-[15px] text-gray-700 mb-4">
               GCIT librarians collect, organize and issue library resources such as books, journals and magazines for different disciplines.
             </p>
 
-            <p className="text-base text-gray-700 mb-4">Their primary responsibilities are:</p>
+            <p className="text-[15px] text-gray-700 mb-4">Their primary responsibilities are:</p>
 
-            <ul className="list-disc pl-6 text-base text-gray-600 space-y-3">
+            <ul className="list-disc pl-6 text-[15px] text-gray-600 space-y-3">
               <li>Maintaining catalog of library resources in KOHA system.</li>
               <li>Collaborating with faculty to keep resources updated.</li>
               <li>Managing electronic books and journals for student access.</li>

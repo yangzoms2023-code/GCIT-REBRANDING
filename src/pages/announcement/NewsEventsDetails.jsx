@@ -3,13 +3,13 @@ import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
-import ne1 from "../../assets/images/ne1.png";
+import ne1 from "../../assets/images/ne1.jpg";
 import ne2 from "../../assets/images/ne2.png";
-import l1 from "../../assets/images/l1.png";
-import l2 from "../../assets/images/l2.png";
-import l3 from "../../assets/images/l3.png";
-import l4 from "../../assets/images/l4.png";
-import l5 from "../../assets/images/l5.png";
+import l1 from "../../assets/images/crop.jpg";
+import l2 from "../../assets/images/p1.jpg";
+import l3 from "../../assets/images/ne3.jpg";
+import l4 from "../../assets/images/ne2.jpg";
+import l5 from "../../assets/images/t1.jpg";
 
 const FadeInUp = ({ children, delay = 0 }) => {
   const [isVisible, setIsVisible] = React.useState(false);

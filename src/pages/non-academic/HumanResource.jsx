@@ -153,19 +153,19 @@ export default function HumanResource() {
 
       <PageBanner
         title="HUMAN RESOURCE AND ADMINISTRATION"
-        subtitle="Oversees human resources and administrative services to support efficient operations"
+        subtitle="Oversees HR and operations"
         image={humanresourcebanner}
       />
 
       <div className="mx-auto w-[85%] py-24 text-left">
         <FadeInLeft>
-          <h3 className="text-3xl font-bold mb-8 text-black font-['Roboto_Slab']">
+          <h3 className="text-2xl font-bold mb-8 text-black font-['Roboto_Slab']">
             Human Resource & Administration
           </h3>
         </FadeInLeft>
 
         <FadeInRight>
-          <p className="text-gray-600 text-base leading-relaxed">
+          <p className="text-gray-600 text-[15px] leading-relaxed">
             The main functions of Human Resource & Administration are in processing
             employee data and assisting in the hiring process. This team facilitates
             a conducive work environment consistent with the college's mission,
@@ -174,7 +174,7 @@ export default function HumanResource() {
         </FadeInRight>
 
         <FadeInLeft>
-          <h3 className="text-xl font-semibold mt-16 mb-10 text-black font-['Roboto_Slab']">
+          <h3 className="text-2xl font-semibold mt-16 mb-10 text-black font-['Roboto_Slab']">
             Core Team
           </h3>
         </FadeInLeft>
@@ -226,7 +226,7 @@ export default function HumanResource() {
               onClick={nextSlide}
               className="bg-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors flex-shrink-0"
             >
-              <span className="text-4xl font-bold block leading-none translate-y-[-5px]">›</span>
+              <span className="text-2xl font-bold block leading-none translate-y-[-5px]">›</span>
             </button>
           </div>
         </FadeInRight>
@@ -237,11 +237,11 @@ export default function HumanResource() {
 
         <FadeInLeft>
           <div className="bg-white rounded-xl shadow-md p-16">
-            <p className="text-base text-gray-700 mb-4 pb-8">
+            <p className="text-[15px] text-gray-700 mb-4 pb-8">
               The key human resource related responsibilities are:
             </p>
 
-            <ul className="list-disc pl-6 text-base text-gray-600 space-y-3">
+            <ul className="list-disc pl-6 text-[15px] text-gray-600 space-y-3">
               <li>Interpreting and applying HR policies and procedures.</li>
               <li>
                 Administering departmental protocols in compliance with Royal
@@ -259,7 +259,7 @@ export default function HumanResource() {
               <li>Managing logistics for VIP visits.</li>
             </ul>
 
-            <p className="text-base text-gray-700 mt-8 pt-8">
+            <p className="text-[15px] text-gray-700 mt-8 pt-8">
               Under administration, the team handles procurement of services,
               equipment, and goods to support daily operations, ensuring proper
               tendering processes and compliance.

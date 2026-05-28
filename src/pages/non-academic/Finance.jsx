@@ -90,13 +90,13 @@ export default function Finance() {
 
       <div className="mx-auto w-[85%] py-24 text-left">
         <FadeInLeft>
-          <h3 className="text-3xl font-bold mb-8 text-black font-['Roboto_Slab']">
+          <h3 className="text-2xl font-bold mb-8 text-black font-['Roboto_Slab']">
             Finance
           </h3>
         </FadeInLeft>
 
         <FadeInRight>
-          <p className="text-gray-600 text-base leading-relaxed w-full">
+          <p className="text-gray-600 text-[15px] leading-relaxed w-full">
             The Finance Department at GCIT is responsible for managing the institute's financial
             operations with transparency, accuracy, and accountability. The team ensures smooth
             budgeting, payroll, procurement, and financial reporting processes while supporting the
@@ -106,7 +106,7 @@ export default function Finance() {
         </FadeInRight>
 
         <FadeInLeft>
-          <h3 className="text-xl font-semibold mt-16 mb-10 text-black font-['Roboto_Slab']">
+          <h3 className="text-2xl font-semibold mt-16 mb-10 text-black font-['Roboto_Slab']">
             Core Team
           </h3>
         </FadeInLeft>
@@ -155,16 +155,16 @@ export default function Finance() {
 
         <FadeInRight>
           <div className="bg-white rounded-xl shadow-md p-16">
-            <p className="text-base text-gray-700 mb-4 pb-8">
+            <p className="text-[15px] text-gray-700 mb-4 pb-8">
               The Finance Department is responsible for the effective financial and budget management
               of the college.
             </p>
 
-            <p className="text-base text-gray-700 mb-4">
+            <p className="text-[15px] text-gray-700 mb-4">
               The department provides support and guidance in the following key activities:
             </p>
 
-            <ul className="list-disc pl-6 text-base text-gray-600 space-y-3">
+            <ul className="list-disc pl-6 text-[15px] text-gray-600 space-y-3">
               <li>Delivery of management reporting for effective college activities.</li>
               <li>Statutory financial and fiscal reporting.</li>
               <li>
