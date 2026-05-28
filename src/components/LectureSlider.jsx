@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import student1 from "../assets/images/student1.png";
 import student2 from "../assets/images/student2.png";
 import student3 from "../assets/images/student3.png";
@@ -43,14 +43,35 @@ const VISIBLE = 4;
 export default function LecturerSlider() {
   const [startIndex, setStartIndex] = useState(0);
   const [selected, setSelected] = useState(0);
+  
+  // Responsive visible items
+  const getVisibleCount = () => {
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth < 640) return 2; // mobile
+      if (window.innerWidth < 1024) return 3; // tablet
+      return 4; // desktop
+    }
+    return 4;
+  };
+  
+  const [visibleCount, setVisibleCount] = useState(getVisibleCount());
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setVisibleCount(getVisibleCount());
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // Create a circular array by duplicating the lecturers array
   const circularLecturers = [...lecturers, ...lecturers];
   
-  const visible = circularLecturers.slice(startIndex, startIndex + VISIBLE);
+  const visible = circularLecturers.slice(startIndex, startIndex + visibleCount);
   
   const totalItems = lecturers.length;
-  const maxStartIndex = totalItems - 1;
+  const maxStartIndex = totalItems - visibleCount;
 
   const nextSlide = () => {
     setStartIndex((prev) => {

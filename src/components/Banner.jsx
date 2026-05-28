@@ -25,9 +25,9 @@ export default function Banner({ title = "Default Title", subtitle = "Default Su
         {fade && <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/70 to-transparent" />}
       </div>
 
-      <div className="relative mx-auto flex h-full w-full max-w-[90%] items-end px-4 pb-14 md:px-6 md:pb-16">
+      <div className="relative mx-auto flex h-full w-full max-w-[90%] items-center justify-center px-4 pb-14 md:px-6 md:pb-16">
         <motion.div
-          className="max-w-[1126px] text-left text-white"
+          className="max-w-[1126px] text-center text-white"
           initial={{ opacity: 0, x: 80, y: 100 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
