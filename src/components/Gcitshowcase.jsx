@@ -111,7 +111,7 @@ export default function GCITShowcase() {
 
   return (
     <div className="bg-[#F2F5F5] min-h-screen text-black flex flex-col items-center">
-      <div className="w-[85%] mt-10 text-left">
+      <div className="w-[90%] md:w-[85%] mt-10 text-left">
         {!selected && (
           <>
             <FadeInLeft>
@@ -223,20 +223,20 @@ export default function GCITShowcase() {
           <>
             <FadeInLeft>
               <div className="text-left">
-                <div className="flex justify-between mb-10">
-                  <div className="w-[60%]">
+                <div className="flex flex-col md:flex-row justify-between mb-10 gap-4">
+                  <div className="w-full md:w-[60%]">
                     <div className="text-xl font-bold">{selected.learnTitle}</div>
                     <div className="text-gray-500 mt-2">{selected.learnDesc}</div>
                   </div>
-                  <img src={imageMap[selected.image]} className="w-[30%] h-48 object-cover rounded-lg" alt={selected.short} />
+                  <img src={imageMap[selected.image]} className="w-full md:w-[30%] h-48 object-cover rounded-lg" alt={selected.short} />
                 </div>
               </div>
             </FadeInLeft>
 
             <FadeInRight>
-              <div className="flex justify-between mb-10">
-                <img src={selected.image2} className="w-[30%] h-48 object-cover rounded-lg" alt="project" />
-                <div className="w-[60%]">
+              <div className="flex flex-col md:flex-row justify-between mb-10 gap-4">
+                <img src={selected.image2} className="w-full md:w-[30%] h-48 object-cover rounded-lg" alt="project" />
+                <div className="w-full md:w-[60%]">
                   <div className="font-bold text-lg mb-2">About the Project</div>
                   {selected.about.map((a, i) => (
                     <p key={i} className="text-gray-500">{a}</p>
@@ -248,9 +248,9 @@ export default function GCITShowcase() {
             <FadeInLeft>
               <div className="mb-10">
                 <div className="font-bold text-lg mb-4">How it Works</div>
-                <div className="flex justify-between">
+                <div className="flex flex-col md:flex-row justify-between gap-4">
                   {selected.howItWorks.map((h, i) => (
-                    <div key={i} className="w-[30%] bg-white shadow-sm p-4 rounded-lg flex gap-3 text-left">
+                    <div key={i} className="w-full md:w-[30%] bg-white shadow-sm p-4 rounded-lg flex gap-3 text-left">
                       <div className="text-[#f48b1a] text-2xl">{h.icon}</div>
                       <div>
                         <div className="font-bold">{h.title}</div>
@@ -263,9 +263,9 @@ export default function GCITShowcase() {
             </FadeInLeft>
 
             <FadeInRight>
-              <div className="flex justify-between mb-10">
-                <img src={selected.image3} className="w-[60%] h-60 object-cover rounded-lg" alt="project" />
-                <div className="w-[30%]">
+              <div className="flex flex-col md:flex-row justify-between mb-10 gap-4">
+                <img src={selected.image3} className="w-full md:w-[60%] h-60 object-cover rounded-lg" alt="project" />
+                <div className="w-full md:w-[30%]">
                   <div className="font-bold mb-2">Key Features</div>
                   {selected.features.map((f, i) => (
                     <div key={i} className="text-gray-500">• {f}</div>
@@ -275,10 +275,10 @@ export default function GCITShowcase() {
             </FadeInRight>
 
             <FadeInLeft>
-              <div className="flex justify-between">
-                <div className="w-[70%]">
+              <div className="flex flex-col md:flex-row justify-between gap-4">
+                <div className="w-full md:w-[70%]">
                   <div className="font-bold mb-3">Developers</div>
-                  <div className="grid grid-cols-3 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                     {selected.developers.map((d, i) => (
                       <div key={i} className="bg-white shadow-sm p-3 rounded-lg text-left">
                         <div className="font-semibold">{d.name}</div>
@@ -288,7 +288,7 @@ export default function GCITShowcase() {
                   </div>
                 </div>
 
-                <div className="w-[20%]">
+                <div className="w-full md:w-[20%]">
                   <div className="font-bold mb-3">Guide</div>
                   <div className="bg-white shadow-sm p-3 rounded-lg text-left">
                     <div className="font-semibold">{selected.guide}</div>

@@ -228,7 +228,7 @@ export default function SchoolAffairs() {
         image={schoolaffairsbanner}
       />
 
-      <div className="mx-auto w-[85%] py-24 text-left">
+      <div className="mx-auto w-[90%] md:w-[85%] py-24 text-left">
         <FadeInLeft>
           <h3 className="text-2xl font-bold mb-8 text-black font-['Roboto_Slab']">
             School Affairs

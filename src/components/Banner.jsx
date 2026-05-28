@@ -16,7 +16,7 @@ export default function Banner({ title = "Default Title", subtitle = "Default Su
   const bgImage = preview || image || heroImg;
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative min-h-[60vh] md:min-h-[70vh] lg:h-screen w-full overflow-hidden">
       <div className="absolute inset-0">
         <img src={bgImage} alt="banner" className="h-full w-full object-cover object-center" draggable={false} />
 

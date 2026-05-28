@@ -81,7 +81,7 @@ export default function Gcit() {
       <PageBanner title="ABOUT US" subtitle="GCIT shapes thinkers, creators, and leaders for tomorrow's digital world." />
 
       {/* Mission & Vision */}
-      <div className="w-[85%] mx-auto py-16 flex flex-col gap-10">
+      <div className="w-[90%] md:w-[85%] mx-auto py-16 flex flex-col gap-10">
         <motion.h3
           className="text-3xl font-semibold text-left text-black font-['Roboto_Slab']"
           initial={{ opacity: 0, x: -55 }}
@@ -120,7 +120,7 @@ export default function Gcit() {
       </motion.div>
 
       {/* Timeline */}
-      <div className="w-[85%] mx-auto py-8">
+      <div className="w-[90%] md:w-[85%] mx-auto py-8">
         <motion.h3
           className="text-3xl font-semibold text-left mb-4 text-black font-['Roboto_Slab']"
           initial={{ opacity: 0, x: -55 }}
@@ -187,7 +187,7 @@ export default function Gcit() {
 
       {/* Highlights */}
       {/* Highlights */}
-<div className="w-[85%] mx-auto pb-20">
+<div className="w-[90%] md:w-[85%] mx-auto pb-20">
   <motion.h3
     className="text-3xl font-semibold text-left mb-6 text-black font-['Roboto_Slab']"
     initial={{ opacity: 0, x: -55 }}
@@ -198,23 +198,23 @@ export default function Gcit() {
     GCIT Highlights
   </motion.h3>
 
-  <div className="flex gap-6">
+  <div className="flex flex-col md:flex-row gap-6">
     <motion.div
-      className="w-[65%]"
+      className="w-full md:w-[65%]"
       initial={{ opacity: 0, x: -50, scale: 0.96 }}
       whileInView={{ opacity: 1, x: 0, scale: 1 }}
       viewport={{ once: false }}
       transition={{ duration: 0.75, ease: "easeOut" }}
     >
       <iframe 
-        className="w-full h-[550px] rounded-xl" 
+        className="w-full h-[350px] md:h-[550px] rounded-xl" 
         src="https://www.youtube.com/embed/IHCHsGV8xrk" 
         title="GCIT Corporate video 2024" 
         allowFullScreen 
       />
     </motion.div>
 
-    <div className="w-[35%] flex flex-col gap-6">
+    <div className="w-full md:w-[35%] flex flex-col gap-6">
       <motion.div
         initial={{ opacity: 0, x: 50, scale: 0.96 }}
         whileInView={{ opacity: 1, x: 0, scale: 1 }}
@@ -222,7 +222,7 @@ export default function Gcit() {
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.12 }}
       >
         <iframe 
-          className="w-full h-[265px] rounded-xl" 
+          className="w-full h-[200px] md:h-[265px] rounded-xl" 
           src="https://www.youtube.com/embed/rshgeRbdygk" 
           title="Unboxing Metaverse by Gyalpozhing College of IT" 
           allowFullScreen 
@@ -236,7 +236,7 @@ export default function Gcit() {
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.26 }}
       >
         <iframe 
-          className="w-full h-[265px] rounded-xl" 
+          className="w-full h-[200px] md:h-[265px] rounded-xl" 
           src="https://www.youtube.com/embed/HTpJakx-oLo" 
           title="Project Showcase AY23/24 - Compilation Year 4 & Year 3" 
           allowFullScreen 

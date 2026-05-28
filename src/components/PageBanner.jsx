@@ -4,7 +4,7 @@ import ScrollDownIndicator from "./ScrollDownIndicator";
 
 export default function PageBanner({ title, subtitle, image, fade = false }) {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative min-h-[50vh] md:min-h-[60vh] lg:h-screen w-full overflow-hidden">
       <div className="absolute inset-0">
         <img
           src={image || heroImg}

@@ -354,7 +354,7 @@ export default function AiDataScience() {
           </motion.div>
 
           {/* Content */}
-          <div className="grid grid-cols-1 gap-20 md:grid-cols-2 md:items-start px-10">
+          <div className="grid grid-cols-1 gap-10 px-4 md:gap-20 md:px-10 md:grid-cols-2 md:items-start">
             {/* Images */}
             <motion.div
               className="grid h-[60%] grid-cols-2 gap-3"

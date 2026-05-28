@@ -122,7 +122,7 @@ export default function Vacancies() {
         image={vacanciesbanner}
       />
 
-      <div className="mx-auto w-[85%]">
+      <div className="mx-auto w-[90%] md:w-[85%]">
         <div className="pt-24">
           <FadeInLeft>
             <h3 className="text-2xl md:text-3xl font-bold text-black mb-6 font-['Roboto_Slab']">

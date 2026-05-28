@@ -350,7 +350,7 @@ export default function FullStack() {
             ))}
           </motion.div>
 
-          <div className="grid grid-cols-1 gap-20 px-10 md:grid-cols-2 md:items-start">
+          <div className="grid grid-cols-1 gap-10 px-4 md:gap-20 md:px-10 md:grid-cols-2 md:items-start">
             <motion.div
               className="grid h-[60%] grid-cols-2 gap-3"
               initial={{ opacity: 0, x: -40, y: 20 }}

@@ -98,7 +98,7 @@ export default function NewsSection() {
             News & Events
           </motion.h2>
 
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-[5fr_2fr_2fr] md:items-stretch">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-[5fr_2fr_2fr] md:items-stretch lg:grid-cols-[5fr_2fr_2fr]">
             {/* Left column */}
             <div className="flex flex-col gap-4">
               <motion.div variants={slideLeft}>

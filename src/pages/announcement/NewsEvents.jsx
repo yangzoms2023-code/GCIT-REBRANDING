@@ -140,7 +140,7 @@ export default function NewsEvents() {
 
       <PageBanner title="NEWS & EVENTS" subtitle="" image={newsbanner} />
 
-      <div className="mx-auto w-[85%]">
+      <div className="mx-auto w-[90%] md:w-[85%]">
         <div className="pt-20">
           <FadeInLeft>
             <h3 className="text-xl md:text-2xl font-bold text-black mb-5 font-['Roboto_Slab']">GCIT News and Events</h3>
