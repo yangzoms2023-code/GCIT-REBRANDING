@@ -38,18 +38,17 @@ const lecturers = [
   },
 ];
 
-const VISIBLE = 4;
-
 export default function LecturerSlider() {
   const [startIndex, setStartIndex] = useState(0);
   const [selected, setSelected] = useState(0);
   
-  // Responsive visible items
   const getVisibleCount = () => {
     if (typeof window !== 'undefined') {
-      if (window.innerWidth < 640) return 2; // mobile
-      if (window.innerWidth < 1024) return 3; // tablet
-      return 4; // desktop
+      if (window.innerWidth < 480) return 1;
+      if (window.innerWidth < 640) return 2;
+      if (window.innerWidth < 768) return 2;
+      if (window.innerWidth < 1024) return 3;
+      return 4;
     }
     return 4;
   };
@@ -59,109 +58,126 @@ export default function LecturerSlider() {
   useEffect(() => {
     const handleResize = () => {
       setVisibleCount(getVisibleCount());
+      setStartIndex(0);
     };
     
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Create a circular array by duplicating the lecturers array
   const circularLecturers = [...lecturers, ...lecturers];
-  
   const visible = circularLecturers.slice(startIndex, startIndex + visibleCount);
-  
   const totalItems = lecturers.length;
   const maxStartIndex = totalItems - visibleCount;
 
   const nextSlide = () => {
     setStartIndex((prev) => {
-      const newIndex = prev + 1;
+      let newIndex = prev + 1;
       if (newIndex > maxStartIndex) {
-        return 0;
+        newIndex = 0;
       }
       return newIndex;
     });
-    // Update selected index to follow the visible items
-    setSelected((prev) => {
-      const newSelected = (prev + 1) % totalItems;
-      return newSelected;
-    });
+    setSelected((prev) => (prev + 1) % totalItems);
   };
 
   const prevSlide = () => {
     setStartIndex((prev) => {
-      const newIndex = prev - 1;
+      let newIndex = prev - 1;
       if (newIndex < 0) {
-        return maxStartIndex;
+        newIndex = maxStartIndex;
       }
       return newIndex;
     });
-    // Update selected index to follow the visible items
-    setSelected((prev) => {
-      const newSelected = (prev - 1 + totalItems) % totalItems;
-      return newSelected;
-    });
+    setSelected((prev) => (prev - 1 + totalItems) % totalItems);
   };
 
   const current = lecturers[selected];
 
-  // Calculate which actual lecturer each visible item corresponds to
   const getActualIndex = (displayIndex) => {
     return (startIndex + displayIndex) % totalItems;
   };
 
+  const getImageSize = (isActive) => {
+    if (typeof window !== 'undefined') {
+      const width = window.innerWidth;
+      if (width < 480) {
+        return isActive ? 'w-20 h-20' : 'w-16 h-16';
+      }
+      if (width < 640) {
+        return isActive ? 'w-24 h-24' : 'w-20 h-20';
+      }
+      if (width < 768) {
+        return isActive ? 'w-28 h-28' : 'w-24 h-24';
+      }
+      if (width < 1024) {
+        return isActive ? 'w-32 h-32' : 'w-28 h-28';
+      }
+      return isActive ? 'w-40 h-40' : 'w-36 h-36';
+    }
+    return isActive ? 'w-40 h-40' : 'w-36 h-36';
+  };
+
   return (
-    <div className="bg-[#F2F5F5] min-h-screen py-8 md:py-12 font-sans">
+    <div className="bg-[#F2F5F5] py-8 md:py-12 font-sans">
       <div className="w-[90%] md:w-[85%] mx-auto">
-        <h3 className="text-2xl font-semibold text-left mb-6 text-black font-['Roboto_Slab']">
+        <h3 className="text-2xl md:text-3xl font-semibold text-left mb-6 md:mb-8 text-black font-['Roboto_Slab']">
           Our Lecturers
         </h3>
 
-        <div className="bg-white rounded-2xl p-4 md:p-6 lg:p-8 shadow-md mb-5">
+        <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md mb-8">
           <div className="flex items-center justify-between gap-4 md:gap-6">
             <button
               onClick={prevSlide}
-              className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#f48b1a] hover:bg-[#e07a0f] transition-all text-white flex items-center justify-center shadow-md shrink-0"
+              className="w-10 h-10 rounded-full bg-[#f48b1a] hover:bg-[#e07a0f] transition-all text-white flex items-center justify-center shadow-md shrink-0"
               aria-label="Previous"
             >
-              <span className="text-4xl font-bold block leading-none translate-y-[-5px]">‹</span>
+              <span className="text-4xl font-bold block leading-none -mt-1">‹</span>
             </button>
 
-            <div className="flex-1 flex gap-6 md:gap-8 lg:gap-10 xl:gap-12 justify-center items-end px-4">
+            <div className="flex-1 flex gap-4 md:gap-6 lg:gap-8 justify-center items-end px-4">
               {visible.map((lec, i) => {
                 const actualIndex = getActualIndex(i);
                 const isActive = actualIndex === selected;
+                const imageSize = getImageSize(isActive);
+                
                 return (
                   <div
                     key={`${actualIndex}-${startIndex}`}
                     onClick={() => setSelected(actualIndex)}
-                    className="flex flex-col items-center cursor-pointer transition-all"
+                    className="flex flex-col items-center cursor-pointer transition-all group"
                   >
                     <div
                       className={`transition-all rounded-2xl ${
-                        isActive ? 'p-3 bg-white shadow-lg border-2 border-[#f48b1a]' : 'border-2 border-transparent'
+                        isActive 
+                          ? 'p-2 md:p-3 bg-white shadow-lg border-2 border-[#f48b1a]' 
+                          : 'border-2 border-transparent group-hover:border-gray-300'
                       }`}
                     >
                       <div
-                        className={`rounded-full overflow-hidden transition-all ${
-                          isActive ? 'w-36 h-36 md:w-40 md:h-40 border-4 border-[#f48b1a]' : 'w-32 h-32 md:w-36 md:h-36 border-4 border-gray-300'
+                        className={`rounded-full overflow-hidden transition-all duration-300 ${
+                          isActive 
+                            ? `border-4 border-[#f48b1a] ${imageSize}` 
+                            : `border-4 border-gray-300 ${imageSize} group-hover:border-[#f48b1a] group-hover:scale-105`
                         }`}
                       >
                         <img
                           src={lec.img}
                           alt={lec.name}
                           className="w-full h-full object-cover"
+                          loading="lazy"
                         />
                       </div>
                     </div>
                     <span
-                      className={`mt-4 text-sm md:text-base transition-all ${
+                      className={`mt-3 md:mt-4 text-sm md:text-base transition-all duration-200 text-center ${
                         isActive
                           ? 'font-semibold text-[#f48b1a]'
-                          : 'font-normal text-gray-700'
+                          : 'font-normal text-gray-700 group-hover:text-[#f48b1a]'
                       }`}
                     >
                       {lec.name.split(' ')[0]}
+                      <span className="hidden sm:inline"> {lec.name.split(' ').slice(1).join(' ')}</span>
                     </span>
                   </div>
                 );
@@ -170,14 +186,13 @@ export default function LecturerSlider() {
 
             <button
               onClick={nextSlide}
-              className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#f48b1a] hover:bg-[#e07a0f] transition-all text-white flex items-center justify-center shadow-md shrink-0"
+              className="w-10 h-10 rounded-full bg-[#f48b1a] hover:bg-[#e07a0f] transition-all text-white flex items-center justify-center shadow-md shrink-0"
               aria-label="Next"
             >
-              <span className="text-4xl font-bold block leading-none translate-y-[-5px]">›</span>
+              <span className="text-4xl font-bold block leading-none -mt-1">›</span>
             </button>
           </div>
 
-          {/* Progress indicators */}
           <div className="flex justify-center gap-2 mt-8">
             {lecturers.map((_, i) => (
               <button
@@ -197,18 +212,20 @@ export default function LecturerSlider() {
           </div>
         </div>
 
-        <div className="w-3/4 md:w-2/4 h-0.5 mx-auto my-8 bg-gradient-to-r from-transparent via-[#f48b1a] to-transparent rounded-full" />
+        <div className="w-3/4 md:w-2/4 h-0.5 mx-auto my-8 md:my-10 bg-gradient-to-r from-transparent via-[#f48b1a] to-transparent rounded-full" />
 
-        <div className="bg-white rounded-2xl p-4 md:p-6 lg:p-8 shadow-md flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+        {/* Bio section with improved spacing */}
+        <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md flex flex-col md:flex-row gap-6 md:gap-8 items-start">
           <div className="shrink-0 w-32 h-40 md:w-44 md:h-56 lg:w-52 lg:h-64 rounded-xl overflow-hidden border-4 border-[#f48b1a] shadow-md mx-auto md:mx-0">
             <img
               src={current.img}
               alt={current.name}
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
           <div className="flex-1 text-center md:text-left">
-            <h3 className="text-2xl font-bold text-[#1a1a2e] mb-2">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#1a1a2e] mb-3">
               {current.name}
             </h3>
             <div className="flex items-center justify-center md:justify-start gap-3 mb-4">

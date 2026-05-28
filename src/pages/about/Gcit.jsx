@@ -34,7 +34,7 @@ function TimelineCard({ src, alt, className, direction = "right" }) {
 function MissionCard({ title, text, image, direction = "left", delay = 0 }) {
   return (
     <motion.div
-      className="relative h-[200px] rounded-2xl overflow-hidden shadow-xl"
+      className="relative h-[220px] md:h-[250px] rounded-2xl overflow-hidden shadow-xl"
       initial={{ opacity: 0, x: direction === "left" ? -70 : 70, scale: 0.94 }}
       whileInView={{ opacity: 1, x: 0, scale: 1 }}
       viewport={{ once: false }}
@@ -49,9 +49,9 @@ function MissionCard({ title, text, image, direction = "left", delay = 0 }) {
         viewport={{ once: false }}
         transition={{ duration: 1, ease: "easeOut", delay }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40 flex flex-col justify-center px-6 text-left">
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40 flex flex-col justify-center px-6 md:px-8 text-left">
         <motion.h2
-          className="text-xl font-semibold mb-2 text-white font-['Roboto_Slab']"
+          className="text-2xl md:text-3xl font-semibold mb-3 text-white font-['Roboto_Slab']"
           initial={{ opacity: 0, y: -18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
@@ -60,7 +60,7 @@ function MissionCard({ title, text, image, direction = "left", delay = 0 }) {
           {title}
         </motion.h2>
         <motion.p
-          className="text-sm leading-relaxed text-white"
+          className="text-sm md:text-base leading-relaxed text-white/90"
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
@@ -81,9 +81,9 @@ export default function Gcit() {
       <PageBanner title="ABOUT US" subtitle="GCIT shapes thinkers, creators, and leaders for tomorrow's digital world." />
 
       {/* Mission & Vision */}
-      <div className="w-[90%] md:w-[85%] mx-auto py-16 flex flex-col gap-10">
+      <div className="w-[90%] md:w-[85%] mx-auto py-16 md:py-20 flex flex-col gap-8 md:gap-10">
         <motion.h3
-          className="text-3xl font-semibold text-left text-black font-['Roboto_Slab']"
+          className="text-2xl md:text-4xl font-semibold text-left text-black font-['Roboto_Slab']"
           initial={{ opacity: 0, x: -55 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false }}
@@ -115,14 +115,15 @@ export default function Gcit() {
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ once: false }}
         transition={{ duration: 0.7, ease: "easeOut" }}
+        className="mb-0"
       >
         <LecturerSlider />
       </motion.div>
 
-      {/* Timeline */}
-      <div className="w-[90%] md:w-[85%] mx-auto py-8">
+      {/* Timeline Section */}
+      <div className="w-[90%] md:w-[85%] mx-auto py-12 md:py-16">
         <motion.h3
-          className="text-3xl font-semibold text-left mb-4 text-black font-['Roboto_Slab']"
+          className="text-2xl md:text-3xl font-semibold text-left mb-6 md:mb-8 text-black font-['Roboto_Slab']"
           initial={{ opacity: 0, x: -55 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false }}
@@ -130,6 +131,24 @@ export default function Gcit() {
         >
           GCIT Journey
         </motion.h3>
+
+        {/* Timeline Description */}
+        <motion.div
+          className="mb-8 md:mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
+          <div className="bg-white/50 rounded-xl p-6 md:p-8 border-l-4 border-[#f48b1a]">
+            <h4 className="text-xl md:text-2xl font-semibold text-[#1a1a2e] mb-3">
+              2017 - 2020
+            </h4>
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+              Since its inauguration by H.E. Dasho Tshering Tobgay in 2017, GCIT has evolved into Bhutan's leading institute for technology and innovation. It introduced the Learning by Doing pedagogy, expanded with Computer Science and IT programs, and achieved national recognition through events like the Chancellor's Cup. By 2020, GCIT adopted the Industry-Competency Model (ICM), launched the Computational Thinking Test, and fully embraced project-based, skills-based learning.
+            </p>
+          </div>
+        </motion.div>
 
         {/* Desktop timeline */}
         <div className="hidden md:block relative w-full" style={{ paddingBottom: "73.5%" }}>
@@ -139,7 +158,7 @@ export default function Gcit() {
               className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[41%] pointer-events-none select-none"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              initial={{ opacity: 0, pathLength: 0 }}
+              initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: false }}
               transition={{ duration: 0.6, ease: "easeOut" }}
@@ -163,13 +182,13 @@ export default function Gcit() {
         {/* Mobile timeline */}
         <div className="md:hidden relative pl-8 border-l-2 border-gray-300 flex flex-col gap-8">
           {[
-            { img: Timeline2017, label: "2017" },
-            { img: Timeline2021, label: "2021" },
-            { img: Timeline2022, label: "2022" },
-            { img: Timeline2023, label: "2023" },
-            { img: Timeline2024, label: "2024" },
-            { img: Timeline2025, label: "2025" },
-          ].map(({ img, label }, i) => (
+            { img: Timeline2017, label: "2017", year: "2017 - 2020" },
+            { img: Timeline2021, label: "2021", year: "2021" },
+            { img: Timeline2022, label: "2022", year: "2022" },
+            { img: Timeline2023, label: "2023", year: "2023" },
+            { img: Timeline2024, label: "2024", year: "2024" },
+            { img: Timeline2025, label: "2025", year: "2025" },
+          ].map(({ img, label, year }, i) => (
             <motion.div
               key={label}
               className="relative"
@@ -179,74 +198,76 @@ export default function Gcit() {
               transition={{ duration: 0.5, ease: "easeOut", delay: i * 0.08 }}
             >
               <div className="absolute -left-[2.6rem] top-2 w-4 h-4 rounded-full bg-orange-400 border-2 border-white shadow" />
-              <img src={img} alt={label} className="w-full max-w-[280px] object-contain" draggable={false} />
+              <div className="bg-white rounded-lg p-4 shadow-md">
+                <div className="text-sm font-semibold text-[#f48b1a] mb-2">{year}</div>
+                <img src={img} alt={label} className="w-full max-w-[200px] object-contain mx-auto" draggable={false} />
+              </div>
             </motion.div>
           ))}
         </div>
       </div>
 
       {/* Highlights */}
-      {/* Highlights */}
-<div className="w-[90%] md:w-[85%] mx-auto pb-20">
-  <motion.h3
-    className="text-3xl font-semibold text-left mb-6 text-black font-['Roboto_Slab']"
-    initial={{ opacity: 0, x: -55 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    viewport={{ once: false }}
-    transition={{ duration: 0.65, ease: "easeOut" }}
-  >
-    GCIT Highlights
-  </motion.h3>
+      <div className="w-[90%] md:w-[85%] mx-auto pb-20 md:pb-24">
+        <motion.h3
+          className="text-2xl md:text-3xl font-semibold text-left mb-6 md:mb-8 text-black font-['Roboto_Slab']"
+          initial={{ opacity: 0, x: -55 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.65, ease: "easeOut" }}
+        >
+          GCIT Highlights
+        </motion.h3>
 
-  <div className="flex flex-col md:flex-row gap-6">
-    <motion.div
-      className="w-full md:w-[65%]"
-      initial={{ opacity: 0, x: -50, scale: 0.96 }}
-      whileInView={{ opacity: 1, x: 0, scale: 1 }}
-      viewport={{ once: false }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
-    >
-      <iframe 
-        className="w-full h-[350px] md:h-[550px] rounded-xl" 
-        src="https://www.youtube.com/embed/IHCHsGV8xrk" 
-        title="GCIT Corporate video 2024" 
-        allowFullScreen 
-      />
-    </motion.div>
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+          <motion.div
+            className="w-full md:w-[65%]"
+            initial={{ opacity: 0, x: -50, scale: 0.96 }}
+            whileInView={{ opacity: 1, x: 0, scale: 1 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.75, ease: "easeOut" }}
+          >
+            <iframe 
+              className="w-full h-[300px] md:h-[550px] rounded-xl" 
+              src="https://www.youtube.com/embed/IHCHsGV8xrk" 
+              title="GCIT Corporate video 2024" 
+              allowFullScreen 
+            />
+          </motion.div>
 
-    <div className="w-full md:w-[35%] flex flex-col gap-6">
-      <motion.div
-        initial={{ opacity: 0, x: 50, scale: 0.96 }}
-        whileInView={{ opacity: 1, x: 0, scale: 1 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.7, ease: "easeOut", delay: 0.12 }}
-      >
-        <iframe 
-          className="w-full h-[200px] md:h-[265px] rounded-xl" 
-          src="https://www.youtube.com/embed/rshgeRbdygk" 
-          title="Unboxing Metaverse by Gyalpozhing College of IT" 
-          allowFullScreen 
-        />
-      </motion.div>
+          <div className="w-full md:w-[35%] flex flex-col gap-6">
+            <motion.div
+              initial={{ opacity: 0, x: 50, scale: 0.96 }}
+              whileInView={{ opacity: 1, x: 0, scale: 1 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0.12 }}
+            >
+              <iframe 
+                className="w-full h-[200px] md:h-[265px] rounded-xl" 
+                src="https://www.youtube.com/embed/rshgeRbdygk" 
+                title="Unboxing Metaverse by Gyalpozhing College of IT" 
+                allowFullScreen 
+              />
+            </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, x: 50, scale: 0.96 }}
-        whileInView={{ opacity: 1, x: 0, scale: 1 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.7, ease: "easeOut", delay: 0.26 }}
-      >
-        <iframe 
-          className="w-full h-[200px] md:h-[265px] rounded-xl" 
-          src="https://www.youtube.com/embed/HTpJakx-oLo" 
-          title="Project Showcase AY23/24 - Compilation Year 4 & Year 3" 
-          allowFullScreen 
-        />
-      </motion.div>
-    </div>
-  </div>
-</div>
+            <motion.div
+              initial={{ opacity: 0, x: 50, scale: 0.96 }}
+              whileInView={{ opacity: 1, x: 0, scale: 1 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0.26 }}
+            >
+              <iframe 
+                className="w-full h-[200px] md:h-[265px] rounded-xl" 
+                src="https://www.youtube.com/embed/HTpJakx-oLo" 
+                title="Project Showcase AY23/24 - Compilation Year 4 & Year 3" 
+                allowFullScreen 
+              />
+            </motion.div>
+          </div>
+        </div>
+      </div>
 
-<Footer />
+      <Footer />
     </div>
   );
 }
