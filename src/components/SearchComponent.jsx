@@ -225,8 +225,19 @@ function SearchResults({ searchTerm, onResultClick, searchHistory, onSaveToHisto
 export default function SearchModal({ isOpen, onClose }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchHistory, setSearchHistory] = useState([]);
+  const [isMobile, setIsMobile] = useState(false);
   const searchInputRef = useRef(null);
   const navigate = useNavigate();
+
+  // Check if device is mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   // Load search history from localStorage
   useEffect(() => {
@@ -326,7 +337,7 @@ export default function SearchModal({ isOpen, onClose }) {
               <input
                 ref={searchInputRef}
                 type="text"
-                placeholder="Search for courses, services, announcements... (Ctrl+K)"
+                placeholder={isMobile ? "Search for courses, services..." : "Search for courses, services, announcements... (Ctrl+K)"}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="ml-3 flex-1 bg-transparent text-base text-white placeholder-gray-400 outline-none md:text-lg"
@@ -383,24 +394,48 @@ export default function SearchModal({ isOpen, onClose }) {
             onSaveToHistory={saveToHistory}
           />
 
-          {/* Keyboard shortcuts hint */}
+          {/* Keyboard shortcuts hint - Mobile friendly */}
           <div className="mt-4 px-4">
-            <div className="flex flex-wrap items-center gap-3 text-xs text-white/40">
-              <span>
-                <kbd className="rounded bg-white/10 px-1.5 py-0.5 text-xs">↑</kbd>
-                <kbd className="ml-1 rounded bg-white/10 px-1.5 py-0.5 text-xs">↓</kbd>
-                <span className="ml-1">to navigate</span>
-              </span>
-              <span>
-                <kbd className="rounded bg-white/10 px-1.5 py-0.5 text-xs">Enter</kbd>
-                <span className="ml-1">to select</span>
-              </span>
-              <span>
-                <kbd className="rounded bg-white/10 px-1.5 py-0.5 text-xs">ESC</kbd>
-                <span className="ml-1">to close</span>
-              </span>
-            </div>
+            {isMobile ? (
+              // Mobile hints
+              <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-white/40">
+                <span className="flex items-center gap-1">
+                  <span className="rounded bg-white/10 px-2 py-1 text-xs">Tap outside</span>
+                  <span>to close</span>
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className="rounded bg-white/10 px-2 py-1 text-xs">Tap result</span>
+                  <span>to navigate</span>
+                </span>
+              </div>
+            ) : (
+              // Desktop hints
+              <div className="flex flex-wrap items-center gap-3 text-xs text-white/40">
+                <span>
+                  <kbd className="rounded bg-white/10 px-1.5 py-0.5 text-xs">↑</kbd>
+                  <kbd className="ml-1 rounded bg-white/10 px-1.5 py-0.5 text-xs">↓</kbd>
+                  <span className="ml-1">to navigate</span>
+                </span>
+                <span>
+                  <kbd className="rounded bg-white/10 px-1.5 py-0.5 text-xs">Enter</kbd>
+                  <span className="ml-1">to select</span>
+                </span>
+                <span>
+                  <kbd className="rounded bg-white/10 px-1.5 py-0.5 text-xs">ESC</kbd>
+                  <span className="ml-1">to close</span>
+                </span>
+              </div>
+            )}
           </div>
+
+          {/* Mobile close hint - tap outside to close */}
+          {isMobile && (
+            <div className="mt-2 text-center">
+              <p className="text-[10px] text-white/30">
+                Tap outside the search box to close
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>
