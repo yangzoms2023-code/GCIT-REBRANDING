@@ -9,7 +9,11 @@ import l1 from "../../assets/images/crop.jpg";
 import l2 from "../../assets/images/p1.jpg";
 import l3 from "../../assets/images/ne3.jpg";
 import l4 from "../../assets/images/ne2.jpg";
-import l5 from "../../assets/images/t1.jpg";
+import l5 from "../../assets/images/r1.jpeg";
+import n1 from "../../assets/images/n1.jpg";
+import n4 from "../../assets/images/n4.jpg";
+import n5 from "../../assets/images/n5.jpg";
+import n3 from "../../assets/images/n3.jpg";
 
 const FadeInUp = ({ children, delay = 0 }) => {
   const [isVisible, setIsVisible] = React.useState(false);
@@ -234,15 +238,15 @@ export default function NewsEventsDetails() {
       ],
     },
     "cybersecurity": {
-      title: "Cybersecurity Awareness Month & Upcoming Symposium with GCIT",
+      title: "BUSF Regional Tournament 2025 – at NRC!",
       date: "October 1, 2025",
       category: "Event",
       heroImage: l2,
       content: `GCIT partners with global cybersecurity experts to host Cybersecurity Awareness Month 2025 with workshops, expert talks, and activities throughout October. The event will culminate in a two-day symposium featuring industry leaders, hands-on workshops, and networking opportunities for students and professionals.`,
       images: [
-        { src: l2, alt: "Cybersecurity Event", caption: "Opening ceremony of Cybersecurity Awareness Month" },
-        { src: l3, alt: "Workshop", caption: "Hands-on cybersecurity workshop for students" },
-        { src: l4, alt: "Experts Speaking", caption: "Industry expert panel discussion on emerging threats" }
+        { src: l2, alt: "BUSF Tournament Event", caption: "Opening ceremony of the regional tournament" },
+        { src: l3, alt: "Tournament Activities", caption: "Students participating in tournament events" },
+        { src: l4, alt: "Award Ceremony", caption: "Winners receiving their awards" }
       ],
     },
     "fintech": {
@@ -270,7 +274,7 @@ export default function NewsEventsDetails() {
       ],
     },
     "royal-visit": {
-      title: "Royal Visit Highlights GCIT's Tech Innovation Showcase",
+      title: "The Royal Family graced GCIT's 2025 Capstone Tech Innovation Showcase",
       date: "June 18, 2025",
       category: "Royal Event",
       heroImage: l5,
@@ -279,6 +283,54 @@ export default function NewsEventsDetails() {
         { src: l5, alt: "Royal Visit Main", caption: "Their Majesties arriving at GCIT for the showcase" },
         { src: ne1, alt: "Royal Procession", caption: "Tour of the innovation showcase with student presenters" },
         { src: ne2, alt: "Students with Royals", caption: "Students presenting their projects to Their Majesties" }
+      ],
+    },
+    "her-majesty-visit": {
+      title: "Her Majesty Gyalyum Dorji Wangmo Wangchuck visited GCIT",
+      date: "March 10, 2025",
+      category: "Royal Event",
+      heroImage: n1,
+      content: `Her Majesty Gyalyum Dorji Wangmo Wangchuck visited Gyalpozhing College of Information Technology (GCIT) to witness the innovative projects and academic excellence at the institution. During her visit, Her Majesty interacted with students and faculty, encouraging them to continue their pursuit of technological innovation for Bhutan's development.`,
+      images: [
+        { src: n1, alt: "Her Majesty's Visit", caption: "Her Majesty arriving at GCIT campus" },
+        { src: ne1, alt: "Student Interaction", caption: "Her Majesty interacting with students" },
+        { src: ne2, alt: "Campus Tour", caption: "Tour of the college facilities" }
+      ],
+    },
+    "teacher-training": {
+      title: "Training on University Teaching-Learning Pedagogy",
+      date: "August 5, 2025",
+      category: "Academic",
+      heroImage: n5,
+      content: `GCIT conducted a comprehensive training program on university teaching-learning pedagogy for faculty members. The training focused on modern teaching methodologies, student engagement strategies, and effective assessment techniques to enhance the quality of education at the college.`,
+      images: [
+        { src: n5, alt: "Training Session", caption: "Faculty members participating in the training" },
+        { src: l1, alt: "Workshop", caption: "Interactive workshop on teaching methodologies" },
+        { src: l2, alt: "Group Discussion", caption: "Faculty engaging in collaborative learning" }
+      ],
+    },
+    "welcome-show": {
+      title: "Welcome Show",
+      date: "July 20, 2025",
+      category: "Event",
+      heroImage: n3,
+      content: `GCIT organized a vibrant Welcome Show to celebrate the arrival of new students for the 2025 academic year. The event featured cultural performances, student speeches, and interactive sessions to help freshmen integrate into campus life and build lasting connections with their peers.`,
+      images: [
+        { src: n3, alt: "Welcome Show", caption: "Students performing at the Welcome Show" },
+        { src: l3, alt: "Audience", caption: "New students enjoying the performances" },
+        { src: l4, alt: "Cultural Program", caption: "Traditional cultural performances" }
+      ],
+    },
+    "busf-tournament": {
+      title: "BUSF Regional Tournament 2025 – at NRC!",
+      date: "September 25, 2025",
+      category: "Sports",
+      heroImage: n4,
+      content: `GCIT hosted the BUSF Regional Tournament 2025 at the National Recreation Centre (NRC), bringing together student-athletes from various colleges to compete in multiple sports disciplines. The tournament promoted sportsmanship, teamwork, and healthy competition among Bhutan's future technology leaders.`,
+      images: [
+        { src: n4, alt: "Tournament Opening", caption: "Opening ceremony of the regional tournament" },
+        { src: l5, alt: "Football Match", caption: "Exciting football match in progress" },
+        { src: ne1, alt: "Award Ceremony", caption: "Winners receiving their trophies" }
       ],
     },
   };

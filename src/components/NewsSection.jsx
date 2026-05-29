@@ -11,7 +11,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import n1 from "../assets/images/n1.jpg";
-import n2 from "../assets/images/t1.jpg";
+import n2 from "../assets/images/r1.jpeg";
 import n3 from "../assets/images/n3.jpg";
 import n4 from "../assets/images/n4.jpg";
 import n5 from "../assets/images/n5.jpg";
@@ -23,6 +23,7 @@ function ImageCard({ title, image, readMore = true, titlePosition = "bottom", cl
   const handleClick = () => {
     if (newsId) {
       navigate(`/news/${newsId}`);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
@@ -102,11 +103,11 @@ export default function NewsSection() {
             {/* Left column */}
             <div className="flex flex-col gap-4">
               <motion.div variants={slideLeft}>
-                <ImageCard title="Her Majesty Gyalyum Dorji Wangmo Wangchuck visited GCIT" image={n1} className="h-72" titlePosition="top" newsId="royal-visit" />
+                <ImageCard title="Her Majesty Gyalyum Dorji Wangmo Wangchuck visited GCIT" image={n1} className="h-72" titlePosition="top" newsId="her-majesty-visit" />
               </motion.div>
               <motion.div className="grid grid-cols-2 gap-4" variants={slideLeft}>
-                <ImageCard title="BUSF Regional Tournament 2025 – at NRC!" image={n4} className="h-52" titlePosition="top" newsId="cybersecurity" />
-                <ImageCard title="Training on University Teaching-Learning Pedagogy" image={n5} className="h-52" titlePosition="top" newsId="young-innovators" />
+                <ImageCard title="BUSF Regional Tournament 2025 – at NRC!" image={n4} className="h-52" titlePosition="top" newsId="busf-tournament" />
+                <ImageCard title="Training on University Teaching-Learning Pedagogy" image={n5} className="h-52" titlePosition="top" newsId="teacher-training" />
               </motion.div>
             </div>
 
@@ -140,7 +141,7 @@ export default function NewsSection() {
                   </div>
                 </div>
               </div>
-              <ImageCard title="Welcome Show" image={n3} titlePosition="top" className="h-64" newsId="zhingscan" />
+              <ImageCard title="Welcome Show" image={n3} titlePosition="top" className="h-64" newsId="welcome-show" />
               <div className="mt-auto flex justify-end">
                 <a href="/announcement/news-events" className="flex items-center gap-1 text-sm font-semibold text-black hover:text-[#f48b1a]">
                   See More ...
